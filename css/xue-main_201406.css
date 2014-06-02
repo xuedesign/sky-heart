@@ -2,33 +2,43 @@
 
 	Title: CSS for xuedeisgn
 	Author: Elmo Wu (by xuedesign studio)
-	Date: 2014/02  
+	Date: 2014/06 
 
 ***********************************************************************************************
 		1 通用
-		2.首頁		
+		2.基本結構
+		  2.1 頁面頂部
+		  2.2 頁面底部
+		  2.3 網站主選單
+		  2.4 頁面中間區塊
+		3.內頁結構
+		  3.1 首頁
+		  3.2 關於協會
+		  3.3 訊息公告
+		  3.4 照片專區
+		  3.5 影音專區
+		  3.6 聯絡我們
+		  3.7 掛號系統
+		4.列印樣式   		
 ***********************************************************************************************/
 
 /* 1. 通用 
------------------------------------------------------------------------------------------------
 ===============================================================================================*/
 body{
-	background:#FFF;
+	background:#3e0b0b;
 	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:20px;
-	color:#565555}
-a:link {text-decoration:underline; color:#00adee}
-a:visited {text-decoration:underline; color:#8c8c8c}
-a:hover {text-decoration:none; color:#F50}
+	color:#2c2c2c}
+a:link {text-decoration:none; color:#2c2c2c}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#ad3713}
 form{margin:0; padding:0}
 image{border:0}
-
 .clean{ clear:both}
 .hidden{ display:none}
 
-/* 2. 首頁  
------------------------------------------------------------------------------------------------
+/* 2.基本結構
 ===============================================================================================*/
 #wrap{ display:block}
 #page_top{ display:block; width:100%; height:100px; background:#F90}
@@ -125,3 +135,9 @@ footer{
 	margin-top: -50px;
 	background: #6CF}
 footer h3{ font-size:0.938em; text-align:center; padding-top:15px}
+
+/* 3.掛號系統
+===============================================================================================*/
+
+/* 4.列印樣式
+===============================================================================================*/
