@@ -8,8 +8,8 @@
 		1 通用
 		2.基本結構
 		  2.1 頁面頂部
-		  2.2 頁面底部
-		  2.3 網站主選單
+		  2.2 網站主選單
+		  2.3 版權列
 		  2.4 頁面中間區塊
 		3.內頁結構
 		  3.1 首頁
@@ -25,7 +25,7 @@
 /* 1. 通用 
 ===============================================================================================*/
 body{
-	background:#3e0b0b;
+	background:#190404;
 	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:20px;
@@ -40,101 +40,144 @@ image{border:0}
 
 /* 2.基本結構
 ===============================================================================================*/
-#wrap{ display:block}
-#page_top{ display:block; width:100%; height:100px; background:#F90}
-header{ display:block; width:1252px; margin:0 auto; padding-top:20px}
-header h1{
-	display:block;
-	float:left;
-	width:20%;
-	border:1px solid #900; 
-    font-size:1.125em; 
-	text-align:center; 
-	line-height:40px}
-#contenter{ display:block; width:1252px; margin:0 auto; padding:17px}
-#contenter section{
-	display:block;
-	float:left;
-	width:68%;
-	min-height:300px;
-	margin-right:2%;
-	background:#9C0;
-	/*padding:150px 0;*/
-	text-align:center}
-#contenter aside{
-	display:block;
-	float:right;
-	width:30%;
-	min-height:300px;
-	background:#CCC;
-	padding:150px 0;
-	text-align:center}
-	
-/*0.0 完美底部佈局---------------------------*/
-html, body, #wrap {height: 100%;}
-body > #wrap {height: auto; min-height: 100%;}
-#main_content{padding-bottom:50px}
-.clearfix:after{content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden}
-.clearfix {display: inline-block}
-/* Hides from IE-mac \*/
-* html .clearfix { height: 1%}
-.clearfix {display: block}
-/* End hide from IE-mac */
+#wrap{ display:block; width:1276px; margin:0 auto; border:2px solid #533a3a}
 
-/*選單*/
-nav{
-   display: block;
-   float: right;
-   width: 75%;
-   margin-bottom: 30px}
-.box_nav { display: block; width: 100%}
-.box_nav ul{ margin: 0; padding: 0}
-.box_nav li{
-	position: relative;
-    float:left;
-    color: #FFF;
-    list-style: none;
-    background: #E77C40}
-.box_nav li a {
-    display: block;        
-    padding: 15px 30px;
-    color: #FFF;
-    text-decoration: none}
-.box_nav li:hover { background: #E9905E}
-.box_nav li ul {
-    background-color: rgba(231, 124, 64, 1);
-    display: none;
-    position: absolute;
-    top: 100%}
-.box_nav li:hover ul {
-    display: block;
-    right: 0;
-    left: 0;
-    top: 100%}
-.toggle { display: none}
-.arrow-bottom {
-    position: absolute;
-    top: 25px;
-    right: 13px;
-    margin-left: 5px;
-    border-top: 4px solid #FFF;
-    border-right: 4px solid transparent;    
-    border-left: 4px solid transparent;        
-    width: 1px;
-    height: 1px}   
-   
-/*版權列*/
-footer{
+/* 2.1 頁面頂部 */
+header{ display:block; width:100%}
+.top_bar{ 
+   display:block; 
+   width:1156px; 
+   height:40px;
+   background:#3e0b0b;
+   padding:10px 60px 0;
+   font-size:0.938em;
+   line-height:25px;
+   color:#FFF}
+.top_left, .top_right{display:block; width:50%} 
+.top_left{ float:left}
+.top_right{ float:right}
+.top_right a{
+    display:block;
+    float:right;
+    width:16px;
+	height:16px;
+	text-indent:-9999px;
+	background:url(../images/icon_mail.png) 0 0 no-repeat;
+	margin:4px 0 0 10px}
+.top_right a:hover{ background:url(../images/icon_mail.png) 0 -16px no-repeat}
+.top_right span{ padding-left:380px}	 
+.top_banner{ 
+   clear:both; 
+   display:block;
+   position:relative; 
+   width:1276px; 
+   height:248px;
+   background:url(../images/bg_banner.jpg) no-repeat} 
+.top_banner h1 a{
 	display:block;
-	width:100%;
-	height:50px;
-	margin-top: -50px;
-	background: #6CF}
-footer h3{ font-size:0.938em; text-align:center; padding-top:15px}
+	position:absolute;
+	top:68px;
+	left:108px;
+	width:428px;
+	height:170px;
+	background:url(../images/bg_h1.png) no-repeat;
+	text-indent:-9999px}
+	
+/* 2.2 網站主選單 */
+nav{
+	display:block; 
+	position:absolute;
+	top:177px;
+	right:60px}
+nav h3{ display:none}
+.navigation li { position: relative; float: left}
+.navigation li a{display: block; height:49px}
+.nav_01, .nav_02, .nav_03, .nav_04, .nav_05{ text-indent:-9999px; background: url(../images/btn_nav.png) no-repeat}
+.nav_01, .nav_05{ width:112px}
+.nav_02, .nav_03, .nav_04{ width:108px}
+.nav_01{ background-position: 0 0} 
+.nav_01:hover{ background-position: 0 -49px}
+.nav_02{ background-position: -112px 0}
+.nav_02:hover{ background-position: -112px -49px}
+.nav_03{ background-position: -220px 0}
+.nav_03:hover{ background-position: -220px -49px}
+.nav_04{ background-position: -328px 0}
+.nav_04:hover{ background-position: -328px -49px}
+.nav_05{ background-position: -436px 0}
+.nav_05:hover{ background-position: -436px -49px}
+.navigation ul{
+	display: none;
+	float: left;
+	position: absolute;			
+	left: 12px;
+	z-index:999;	
+	margin: 0}
+.navigation li:hover > ul{display: block}			
+.navigation ul a {
+	width:80px;
+	height:25px;
+	padding: 5px 6px;
+	font-size:1em;	
+	color: #fff;
+	text-align:center;		
+	background: #5d2314;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top:8px;
+	overflow:hidden}
+.navigation ul a:hover { background: #b3743f; text-decoration:none}
+
+/* 跑馬燈 */
+.box_marquee{
+   display:block;
+   width:1156px; 
+   height:32px;
+   background:#3e0b0b;
+   padding:8px 60px 0;
+   border-top:1px solid #333}
+.box_marquee h3{
+	display:block;
+	float:left;
+	width:58px;
+	height:19px;
+	background:url(../images/bg_hot.png) no-repeat;
+	text-indent:-9999px;
+	margin-top:4px}
+.tickercontainer {
+	display:block;
+	float:right; 
+	width: 1060px; 
+	height: 30px; 
+	margin: 0; 
+	padding: 0}
+.tickercontainer .mask { 
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 1060px;
+	overflow: hidden}
+.newsticker { 
+	position: relative;
+	left: 750px;
+	margin: 0;
+	padding: 0}
+.newsticker li { float: left; margin: 0; padding: 0}
+.newsticker a{
+	white-space: nowrap;
+	padding: 0;
+	font-size:1em;
+	line-height:25px;
+	color: #fff;
+	margin: 0 50px 0 0}
+.newsticker a:hover{ color:#f6b55b}		
+   
+    
+
+
+
+   
+
 
 /* 3.掛號系統
 ===============================================================================================*/
