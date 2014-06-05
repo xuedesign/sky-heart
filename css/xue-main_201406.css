@@ -37,10 +37,24 @@ form{margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
 .hidden{ display:none}
+a.btn_go{
+	display:block;
+	width:169px;
+	height:31px;
+	padding-top:7px;
+	background:url(../images/btn_go.png) no-repeat;
+	font-size:0.938em;
+	line-height:25px;
+	color:#FFF;
+	text-align:center}
+a.btn_go:hover{
+	color: #FFBD5F;
+	text-decoration:none;
+    background:url(../images/btn_go.png) 0 -38px no-repeat}
 
 /* 2.基本結構
 ===============================================================================================*/
-#wrap{ display:block; width:1276px; margin:0 auto; border:2px solid #533a3a}
+#wrap{ display:block; width:1276px; margin:0 auto; /*border:2px solid #533a3a*/}
 
 /* 2.1 頁面頂部 */
 header{ display:block; width:100%}
@@ -120,11 +134,11 @@ nav h3{ display:none}
 	font-size:1em;	
 	color: #fff;
 	text-align:center;		
-	background: #5d2314;
+	background: #802F1B;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	margin-top:8px;
+	margin-top:3px;
 	overflow:hidden}
 .navigation ul a:hover { background: #b3743f; text-decoration:none}
 
@@ -144,43 +158,74 @@ nav h3{ display:none}
 	background:url(../images/bg_hot.png) no-repeat;
 	text-indent:-9999px;
 	margin-top:4px}
-.tickercontainer {
-	display:block;
-	float:right; 
-	width: 1060px; 
-	height: 30px; 
-	margin: 0; 
-	padding: 0}
-.tickercontainer .mask { 
-	position: relative;
-	left: 0;
-	top: 0;
+#demoLeft {
+	float:left;
+	margin:0 0 0 20px;
+	overflow:hidden;
 	width: 1060px;
-	overflow: hidden}
-.newsticker { 
-	position: relative;
-	left: 750px;
-	margin: 0;
-	padding: 0}
-.newsticker li { float: left; margin: 0; padding: 0}
-.newsticker a{
-	white-space: nowrap;
+	height:30px}
+#demoLeft .indemo {float: left; width:500%}
+#marquee_01, #marquee_02{ float: left}
+#demoLeft a{
 	padding: 0;
 	font-size:1em;
 	line-height:25px;
 	color: #fff;
 	margin: 0 50px 0 0}
-.newsticker a:hover{ color:#f6b55b}		
-   
-    
-
-
+#demoLeft a:hover{ color:#f6b55b}
 
    
+/* 2.3 版權列 */ 
+footer{
+   display:block;
+   position:relative;
+   width:100%;
+   height:143px;
+   background:url(../images/bg_footer.png) repeat-x;
+   padding-top:40px}
+footer p{
+	text-align:center;
+	font-size:0.938em;
+	line-height:25px;
+	color:#FFF;
+	padding-top:15px}
+a.maplink{ color:#0a0a96; text-decoration:underline; font-weight:bold; padding-left:10px}
+a.maplink:visited{ color:#0a0a96; text-decoration:underline; font-weight:bold}
+a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
+.to_register{ position:absolute; top:120px; right:67px}		   
+	 
+/* 2.4 頁面中間區塊 */	   
+#contenter{
+	display:block;
+	position:relative;
+	width:1148px;
+	padding:40px 64px;
+	background:url(../images/bg_container.jpg) repeat-y}
 
 
 /* 3.掛號系統
 ===============================================================================================*/
+/* 3.1 首頁 */
+#box_lastnews{
+	display:block;
+	width:1156px;
+	margin-bottom:30px}
+#box_lastphotos{
+	display:block;
+	float:left;
+	width:694px}
+#box_lastvideos{
+	display:block;
+	float:right;
+	width:412px;}
+.bg_title-01, .bg_title-02, .bg_title-03{ 
+    display:block;
+	position:relative; 
+	height:48px; 
+	background: url(../images/bg_title.png) no-repeat}
+.bg_title-01{ width:1156px}
+.bg_title-02{ width:694px; background-position: 0 -48px}
+.bg_title-03{ width:412px; background-position:0 -96px}	
 
 /* 4.列印樣式
 ===============================================================================================*/
