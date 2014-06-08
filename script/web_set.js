@@ -1,12 +1,3 @@
-//響應式選單
-$(document).ready(function() {
-    $(".toggle").click(function() {
-        $(this).toggleClass("active");
-        $(".box_nav").slideToggle();
-    });
-    $(".box_nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
-});
-
 // 另開視窗
 function externalLinks() { 
  if (!document.getElementsByTagName) return; 

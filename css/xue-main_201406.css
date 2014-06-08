@@ -51,10 +51,21 @@ a.btn_go:hover{
 	color: #FFBD5F;
 	text-decoration:none;
     background:url(../images/btn_go.png) 0 -38px no-repeat}
+a.btn_more{
+	display:block;
+	width:144px;
+	height:36px;
+	background:url(../images/btn_more.png) no-repeat;
+	padding-top:8px;
+	text-align:center;
+	font-size:0.938em;
+	line-height:22px;
+	color:#2c2c2c}
+a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}	
 
 /* 2.基本結構
 ===============================================================================================*/
-#wrap{ display:block; width:1276px; margin:0 auto; /*border:2px solid #533a3a*/}
+#wrap{ display:block; width:1276px; margin:0 auto}
 
 /* 2.1 頁面頂部 */
 header{ display:block; width:100%}
@@ -110,15 +121,15 @@ nav h3{ display:none}
 .nav_01, .nav_05{ width:112px}
 .nav_02, .nav_03, .nav_04{ width:108px}
 .nav_01{ background-position: 0 0} 
-.nav_01:hover{ background-position: 0 -49px}
+.nav_01:hover, .nav_01.navin{ background-position: 0 -49px}
 .nav_02{ background-position: -112px 0}
-.nav_02:hover{ background-position: -112px -49px}
+.nav_02:hover, .nav_02.navin{ background-position: -112px -49px}
 .nav_03{ background-position: -220px 0}
-.nav_03:hover{ background-position: -220px -49px}
+.nav_03:hover, .nav_03.navin{ background-position: -220px -49px}
 .nav_04{ background-position: -328px 0}
-.nav_04:hover{ background-position: -328px -49px}
+.nav_04:hover, .nav_04.navin{ background-position: -328px -49px}
 .nav_05{ background-position: -436px 0}
-.nav_05:hover{ background-position: -436px -49px}
+.nav_05:hover, .nav_05.navin{ background-position: -436px -49px}
 .navigation ul{
 	display: none;
 	float: left;
@@ -201,6 +212,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	width:1148px;
 	padding:40px 64px;
 	background:url(../images/bg_container.jpg) repeat-y}
+.to_more{ position:absolute; top:3px; right:0}	
 
 
 /* 3.掛號系統
@@ -208,8 +220,8 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 /* 3.1 首頁 */
 #box_lastnews{
 	display:block;
-	width:1156px;
-	margin-bottom:30px}
+	width:1148px;
+	margin-bottom:20px}
 #box_lastphotos{
 	display:block;
 	float:left;
@@ -223,9 +235,156 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	position:relative; 
 	height:48px; 
 	background: url(../images/bg_title.png) no-repeat}
-.bg_title-01{ width:1156px}
+.bg_title-01{ width:1148px}
 .bg_title-02{ width:694px; background-position: 0 -48px}
-.bg_title-03{ width:412px; background-position:0 -96px}	
+.bg_title-03{ width:412px; background-position:0 -96px}
+.bar_title h3{
+	position:absolute;
+	top:10px;
+	left:75px;
+	font-size:1em;
+	line-height:30px;
+	color:#FFF;
+	letter-spacing:1px}
+
+/*首頁最新消息*/			
+.tabs { width: 1088px; height: 32px; padding:8px 0 0 60px}
+.tabs li {
+	display:block;
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	background: #6a301f;
+	margin:0 10px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px}
+.tabs li a {
+	display: block;
+	padding: 0 20px;
+	color:#b7a5a0;
+	text-decoration: none}
+.tabs li a:hover { 
+    background: #fffc00; 
+	color:#2c2c2c;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px}
+.tabs li.active a{ 
+    background: #fffc00; 
+	color:#2c2c2c;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px}
+.tabs li.active a:hover{ background: #fffc00; color:#2c2c2c}
+.tab_container{ display:block; width:100%}
+.tab_container .tab_content {
+	display:block;
+	width:1078px;
+	padding: 30px 20px 30px 50px}
+
+.mytable{}
+.mytable td{ padding:8px 5px; font-size:1em; line-height:25px}
+.mytable .news_class{ width:15%; background:url(../images/icon_paper.png) 0 5px no-repeat}
+.mytable .news_class span{ 
+   padding:3px 15px; 
+   background:#DFA96C; 
+   text-align:center; 
+   color:#fff;
+   text-shadow: 1px 1px 0 #DFA96C;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   margin:0 0 0 40px}
+.mytable .news_date{ 
+   width:15%;
+   font-size:1em; 
+   text-align:right; 
+   color:#ad3713}
+
+/*首頁照片專區*/
+.myphoto{ display:block; margin:0 auto}
+.width618{ width:618px}
+.myphoto ul{ padding:20px 0}
+.myphoto li{
+	display:block;
+	width:150px;
+	float:left;
+	margin:0 28px 15px}
+.myphoto .box_photo{ 
+   display:block; 
+   width:144px; 
+   height:144px; 
+   border:3px solid #FFF; 
+   overflow:hidden}
+.myphoto .box_photo img{ width:144px}
+.myphoto time{
+	display:block; 
+	width:148px;
+	font-size:1em;
+	line-height:30px;
+	text-align:center;
+	color:#a95823;
+	letter-spacing:1px}
+.myphoto p{ 
+   display:block; 
+   width:100%; 
+   height:44px; 
+   overflow:hidden;
+   font-size:1em;
+   line-height:22px}   
+	   	
+/*首頁影音專區*/
+.idTabs {
+	display:block;
+	width:366px;
+	margin:20px auto}
+.tabs_number{ display:block; margin-top:15px; text-align:center}
+.tabs_number li { 
+   display: inline-block; 
+   text-align:center; 
+   list-style:none}
+.tabs_number a {
+   background:#642a17; 
+   color:#a7908b; 
+   padding:5px 13px;
+   margin:0 5px;
+   font-size:1em;
+   line-height:25px; 
+   text-decoration:none;
+    -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px}
+.tabs_number a:hover{ background:#fffc00; color:#000 }
+.tabs_number a.selected{ background:#fffc00; color:#000 }
+
+.playlist li { 
+   display:none;
+   position:relative; 
+   float:left;
+   width:330px;
+   margin:0 0 0 30px}
+.playlist time{ font-size:0.813em; line-height:22px; padding:15px 0; color:#a44e15} 
+.playlist h4{ font-size:1em; line-height:25px; color:#000; padding-bottom:10px}
+.playlist .filminfo{
+	display:block;
+	width:100%;
+	height:112px;
+	overflow:hidden;
+	font-size:0.938em;
+	line-height:22px;
+	margin-bottom:15px}   
+.playlist .fancybox-media{
+	display:block;
+	position:absolute;
+	top:56px;
+	left:97px;
+	background:url(../images/btn_play.png) no-repeat;
+	width:136px;
+	height:136px;
+	text-indent:-9999px}
+.playlist .fancybox-media:hover{ background:url(../images/btn_play.png) 0 -136px no-repeat}	   
+
 
 /* 4.列印樣式
 ===============================================================================================*/

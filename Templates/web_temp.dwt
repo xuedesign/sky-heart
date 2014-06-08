@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-tw"><!-- InstanceBegin template="/Templates/web_temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="zh-tw">
 <head>
 <meta charset="utf-8" lang="zh-tw">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,9 +7,9 @@
 <meta name="Author" content="社團法人中華彌勒文化天仁堂發展協會" />
 <link rel="shortcut icon"  href="../images/favicon.ico"/>
 <link rel="icon" href="../images/favicon.ico"/>
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>關於協會│社團法人中華彌勒文化天仁堂發展協會</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <link rel="stylesheet" href="../css/reset.css" />
 <link rel="stylesheet" href="../css/xue-main_201406.css"/>
 <link rel="stylesheet" href="../css/fancybox.css">
@@ -23,8 +23,8 @@
 <!--[if IE 7]>
 	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
 <![endif]-->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
@@ -32,19 +32,19 @@
         <header>
            <div class="top_bar">
               <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年4月17日</div>
-              <div class="top_right"><span>服務專線:(02)2267-2207</span><a href="contact.html" title="聯絡我們">聯絡我們</a></div>
+              <div class="top_right"><span>服務專線:(02)2267-2207</span><a href="../content/contact.html" title="聯絡我們">聯絡我們</a></div>
            </div>
            
            <section class="top_banner">
               <h1><a href="../index.html" title="回首頁">社團法人中華彌勒文化天仁堂發展協會</a></h1>
               <nav>
                 <h3>網站主選單</h3>
-                <!-- InstanceBeginEditable name="nav" -->
+                <!-- TemplateBeginEditable name="nav" -->
                 <ul class="navigation">
                   <li><a href="#" title="關於協會" class="nav_01 navin">關於協會</a>
                     <ul>
-                      <li><a href="purpose.html" title="宗旨">宗旨</a></li>
-                      <li><a href="profile.html" title="簡介">簡介</a></li>
+                      <li><a href="../content/purpose.html" title="宗旨">宗旨</a></li>
+                      <li><a href="../content/profile.html" title="簡介">簡介</a></li>
                     </ul>
                   </li>
                   <li><a href="#" title="訊息公告" class="nav_02">訊息公告</a>
@@ -53,11 +53,11 @@
                       <li><a href="#" title="公告事項">公告事項</a></li>
                     </ul>
                   </li>
-                  <li><a href="photos_list.html" title="照片專區" class="nav_03">照片專區</a></li>
-                  <li><a href="videos_list.html" title="影音專區" class="nav_04">影音專區</a></li>
-                  <li><a href="contact.html" title="聯絡我們" class="nav_05">聯絡我們</a></li>
+                  <li><a href="../content/photos_list.html" title="照片專區" class="nav_03">照片專區</a></li>
+                  <li><a href="../content/videos_list.html" title="影音專區" class="nav_04">影音專區</a></li>
+                  <li><a href="../content/contact.html" title="聯絡我們" class="nav_05">聯絡我們</a></li>
                 </ul>
-                <!-- InstanceEndEditable -->
+                <!-- TemplateEndEditable -->
               </nav>
            </section>
            
@@ -79,22 +79,22 @@
         </header>
         
         
-        <!-- InstanceBeginEditable name="mycontenter" -->
+        <!-- TemplateBeginEditable name="mycontenter" -->
         <section id="contenter">
-            <div id="box_lastnews">
+          <div id="box_lastnews">
                 <div class="bar_title bg_title-01">
-                  <h3>訊息公告</h3>
+                   <h3>訊息公告</h3>
                 </div>
             </div>
-          
+            
           
         </section>
-        <!-- InstanceEndEditable -->
+        <!-- TemplateEndEditable -->
         
         
         <footer>
            <p>社團法人中華彌勒文化天仁堂發展協會&nbsp;&nbsp;&nbsp;統一編號：09805611&nbsp;&nbsp;&nbsp;聯絡電話：(02)2267-2072、22672073<br>
-地址:新北市土城區龍泉路35號  <a href="contact.html" title="交通資訊" class="maplink">交通資訊</a></p>
+地址:新北市土城區龍泉路35號  <a href="../content/contact.html" title="交通資訊" class="maplink">交通資訊</a></p>
             <p>社團法人中華彌勒文化天仁堂發展協會&copy;版權所有<br>
 本網站全部圖文係版權所有非經同意不得將全部或部分內容，轉載於任何形式媒體</p>
             <a href="../register/login.html" title="管理人員登入" class="btn_go to_register">管理人員登入</a>
@@ -107,4 +107,4 @@
 <script src="../script/jquery.lazyload.js"></script>
 <script src="../script/web_set.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>
