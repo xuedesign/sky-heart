@@ -98,7 +98,7 @@
             <p>社團法人中華彌勒文化天仁堂發展協會&copy;版權所有<br>
 本網站全部圖文係版權所有非經同意不得將全部或部分內容，轉載於任何形式媒體</p>
             <a href="../register/login.html" title="管理人員登入" class="btn_go to_register">管理人員登入</a>
-            <p class="hidden">製作團隊：版面設計/Ethan Lin  網頁前端/開始設計工作室 Elmo  網站程式/玩人創意設計 YHJ</p>
+            <p class="hidden">製作團隊：版面設計/Ethan Lin  網站前端/開始設計工作室 Elmo  後端程式/玩人創意設計 YHJ</p>
         </footer>   
     
   </div><!--// end #wrap -->    

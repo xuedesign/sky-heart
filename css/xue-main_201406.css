@@ -54,9 +54,9 @@ a.btn_go:hover{
 a.btn_more{
 	display:block;
 	width:144px;
-	height:36px;
+	height:35px;
 	background:url(../images/btn_more.png) no-repeat;
-	padding-top:8px;
+	padding-top:9px;
 	text-align:center;
 	font-size:0.938em;
 	line-height:22px;
@@ -151,7 +151,7 @@ nav h3{ display:none}
 	border-radius: 15px;
 	margin-top:3px;
 	overflow:hidden}
-.navigation ul a:hover { background: #b3743f; text-decoration:none}
+.navigation ul a:hover { color:#2c2c2c; background:#fffc00 /*#b3743f*/; text-decoration:none}
 
 /* 跑馬燈 */
 .box_marquee{
@@ -215,10 +215,10 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .to_more{ position:absolute; top:3px; right:0}	
 
 
-/* 3.掛號系統
+/* 3.內頁結構
 ===============================================================================================*/
 /* 3.1 首頁 */
-#box_lastnews{
+#box_lastnews, #page_main{
 	display:block;
 	width:1148px;
 	margin-bottom:20px}
@@ -242,8 +242,9 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	position:absolute;
 	top:10px;
 	left:75px;
-	font-size:1em;
+	font-size:1.063em;
 	line-height:30px;
+	font-weight:normal;
 	color:#FFF;
 	letter-spacing:1px}
 
@@ -404,7 +405,62 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	background: url(../images/icon_movie.png) 115px 6px no-repeat; 
 	background-color:#333;
 	opacity:.8}
-.playlist .btn_view:hover{ opacity:.8; background-color:#BA7F6A; text-decoration:none}	   
+.playlist .btn_view:hover{ opacity:.8; background-color:#BA7F6A; text-decoration:none}
+
+/* 3.2 關於協會 */
+.bar_cookie{
+	display:block;
+	float:right;
+	width:40%;
+	text-align:right;
+	padding: 15px 30px 0 0;
+	font-size:0.938em;
+	line-height:22px;
+	letter-spacing:1px}
+.bar_cookie a{ color:#2c2c2c; text-decoration:none}
+.bar_cookie a:visited{ color:#2c2c2c; text-decoration:none}
+.bar_cookie a:hover{ color:#ad3713; text-decoration: underline}
+.bar_cookie span{ 
+     display:inline-block;
+	 width:16px;
+	 height:16px;
+	 background:url(../images/icon_pin.png) no-repeat;
+	 margin-right:5px}
+
+#sub_nav, #page_container{
+	display:block;
+	width:1042px;
+	padding:15px 30px 0 76px}
+#sub_nav ul{ display:block; padding-bottom:15px}
+#sub_nav li a{
+	display:block;
+	float:left;
+	margin-right:15px;
+	padding:5px 15px;
+	font-size:1em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#ad3713}
+#sub_nav li a:hover, #sub_nav .subnavin{ color:#2c2c2c; text-decoration:none; background: #fffc00}
+#page_container h4{
+	font-size:1.25em;
+	line-height:30px;
+	font-weight:normal;
+	color:#ad3713;
+	padding-bottom:15px}	
+#page_container p{ font-size:1em; line-height:25px;}
+#page_container .img_left{
+	display:block;
+	float:left;
+	margin:0 20px 20px 0}
+#page_container .img_right{
+	display:block;
+	float:right;
+	margin:0 0 20px 20px}				   
 
 
 /* 4.列印樣式
