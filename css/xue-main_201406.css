@@ -230,7 +230,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	display:block;
 	float:right;
 	width:412px;}
-.bg_title-01, .bg_title-02, .bg_title-03{ 
+.bg_title-01, .bg_title-02, .bg_title-03, .bg_title-inside{ 
     display:block;
 	position:relative; 
 	height:48px; 
@@ -238,6 +238,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .bg_title-01{ width:1148px}
 .bg_title-02{ width:694px; background-position: 0 -48px}
 .bg_title-03{ width:412px; background-position:0 -96px}
+.bg_title-inside { width:1148px; margin-bottom:30px}
 .bar_title h3{
 	position:absolute;
 	top:10px;
@@ -427,11 +428,8 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	 background:url(../images/icon_pin.png) no-repeat;
 	 margin-right:5px}
 
-#sub_nav, #page_container{
-	display:block;
-	width:1042px;
-	padding:15px 30px 0 76px}
-#sub_nav ul{ display:block; padding-bottom:30px}
+#sub_nav, #page_container{ display:block; width:1042px; padding:0 30px 0 76px}
+#sub_nav ul{ display:block; padding-bottom:50px}
 #sub_nav li a{
 	display:block;
 	float:left;
@@ -446,6 +444,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	text-decoration:none; 
 	background:#ad3713}
 #sub_nav li a:hover, #sub_nav .subnavin{ color:#2c2c2c; text-decoration:none; background: #fffc00}
+
 #page_container h4{
 	font-size:1.25em;
 	line-height:30px;
@@ -460,7 +459,46 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 #page_container .img_right{
 	display:block;
 	float:right;
-	margin:0 0 20px 20px}				   
+	margin:0 0 20px 20px}
+#page_container a{ color:#D6A238; text-decoration:none}
+#page_container a:visited{ color:#999; text-decoration:none}
+#page_container a:hover{color:#ad3713; text-decoration:underline}	
+	
+/* 3.5 影音專區 */
+
+/* 3.6 聯絡我們 */
+.box_map{
+	display:block;
+	position:relative;
+	float:left;
+	width:510px;
+	height:360px;
+	background:#FFF;
+	padding:10px 0 0 10px;
+	-webkit-box-shadow: 0 0 8px #ABABAB;
+	-moz-box-shadow: 0 0 8px #ABABAB;
+	box-shadow: 0 0 8px #ABABAB}
+.viewmap{
+	display:block;
+	position:absolute;
+	top:375px;
+	right:0;
+	width:100px;
+	font-size:0.938em;
+	text-align:right;
+	background:url(../images/icon_map_location.png) 3px 5px no-repeat}	
+.contact_info{
+	display:block;
+	float:right;
+	width:500px}
+.contact_info ul{}
+.contact_info li{
+	font-size:1em;
+	line-height:22px;
+	padding:10px 0;
+	border-bottom:1px dashed #999}
+.contact_info li span{ padding-left:80px}	
+					   
 
 
 /* 4.列印樣式
