@@ -283,7 +283,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	width:1078px;
 	padding: 30px 20px 30px 50px}
 
-.mytable{}
+.mytable{ width:100%}
 .mytable td{ padding:8px 5px; font-size:1em; line-height:25px}
 .mytable .news_class{ width:15%; background:url(../images/icon_paper.png) 0 5px no-repeat}
 .mytable .news_class span{ 
