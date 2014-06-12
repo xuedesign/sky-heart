@@ -94,12 +94,42 @@
                <!--<div class="time">活動日期：2014-06-10</div>-->
                <div class="box_btn"><a href="#" title="進階搜尋" class="show_hide">進階搜尋</a></div>
                <br class="clean">
-               <div class="slidingdiv">
+               <div class="box_search">
                   <span class="arrow_t_int"></span>
-                  zdfdsdfgdfgdfgdfgdfgdfgbvcbcghfg
+                  <div class="search_left">
+                     <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/> 
+                      <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
+					  <script src="http://mybidrobot.allalla.com/jquery/jquery.ui.datepicker-zh-TW.js"></script>
+                      <script>
+                         $(function() {
+                         $( "#startDate" ).datepicker({
+                         showOn: "button",
+                         buttonImage: "../images/btn_calendar.gif",
+                         buttonImageOnly: true
+                          });
+                         $( "#dueDate" ).datepicker({
+                         showOn: "button",
+                         buttonImage: "../images/btn_calendar.gif",
+                         buttonImageOnly: true
+                          });
+                        });
+                      </script>
+                     <form action="videos_search.html" method="post">
+                        <div class="keyword"><span>關鍵字：</span><input name="" type="text" class="mytxtarea w250"></div>
+                        <div class="eventime"><span>時間：</span><input id="startDate" name="startDate" type="text" class="mytxtarea"> 至 <input id="dueDate" name="dueDate" type="text" class="mytxtarea"></div>
+                       <div class="box_send">
+                           <input name="送出" type="submit" onclick="javascript:location.href='videos_search.html';" value="開始搜尋" class="btn_send">
+                           <input name="重設" type="reset" value="清除條件" class="btn_send">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="search_right">
+                     <h4>本次搜尋結果：</h4>
+                     <p><span>0</span>筆</p>
+                  </div>
                </div>
                <script><!-- 預設：區塊隱藏 -->
-                    $(document).ready(function(){$(".slidingdiv").hide();$(".show_hide").show();$(".show_hide").click(function(){$(".slidingdiv").slideToggle()})});
+                    $(document).ready(function(){$(".box_search").hide();$(".show_hide").show();$(".show_hide").click(function(){$(".box_search").slideToggle()})});
                </script>
             </div>
                 

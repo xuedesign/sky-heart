@@ -61,7 +61,23 @@ a.btn_more{
 	font-size:0.938em;
 	line-height:22px;
 	color:#2c2c2c}
-a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}	
+a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
+.btn_send{
+	display:inline-block;
+	width:110px;
+	border:none;
+	font-size:.938em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#ad3713;
+	padding:3px 8px;
+	cursor:pointer;
+	margin:0 5px}
+.btn_send:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}		
 
 /* 2.基本結構
 ===============================================================================================*/
@@ -543,17 +559,18 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	background:#E5DBD8} 
 
 /*進階搜尋框*/
-.slidingdiv {
+.box_search {
+	display:none;
 	width:1008px;
 	position:relative;
-	height:150px;
+	height:130px;
     background:#CE9D8E;
     padding:20px;
     margin-top:25px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;}
-.slidingdiv .arrow_t_int{
+.box_search .arrow_t_int{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -562,7 +579,52 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	position:absolute;
 	top:-30px;
 	right:40px}	
-.show_hide{ display:none}	  	
+.show_hide{ display:none}
+
+.search_left{ 
+    display:block; 
+	float:left; 
+	width:550px;
+	border-right:1px dashed #9E776B}
+.keyword, .eventime{ display:block; margin-bottom:15px}
+.keyword span, .eventime span{ 
+    display:inline-block; 
+	width:70px;
+	text-shadow: 1px 1px 0 #E8C0B3}
+.mytxtarea{
+	border:1px solid #A2A1A1;
+	padding:5px 8px;
+	margin-right:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	height: 22px}
+.mytxtarea:focus{
+	-webkit-box-shadow: 0 0 10px #803A11;
+	-moz-box-shadow: 0 0 10px #803A11;
+	-o-box-shadow: 0 0 10px #803A11;
+	-ms-box-shadow: 0 0 10px #803A11;
+	box-shadow: 0 0 10px #803A11}
+.w250{ width:365px}
+.box_send{ display:block; padding-left:105px}			  	
+
+.search_right{ display:block; float:right; width:428px}
+.search_right p{ font-size:1em; line-height:25px; padding-bottom:15px}
+.search_right span{
+	display:inline-block;
+	width:110px;
+	margin:30px 10px 0 0;
+	padding-bottom:20px;
+	text-align:center; 
+    font-size:3em;
+	font-weight:bold;
+	color:#833D15;
+	letter-spacing:1px;
+	text-shadow: 1px 1px 0 #E8C0B3;
+	border-bottom:1px solid #AB7666}
+
 
 /* 3.6 聯絡我們 */
 .box_map{
