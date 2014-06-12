@@ -238,7 +238,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .bg_title-01{ width:1148px}
 .bg_title-02{ width:694px; background-position: 0 -48px}
 .bg_title-03{ width:412px; background-position:0 -96px}
-.bg_title-inside { width:1148px; margin-bottom:30px}
+.bg_title-inside { width:1148px; margin-bottom:20px}
 .bar_title h3{
 	position:absolute;
 	top:10px;
@@ -320,21 +320,20 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    border:3px solid #FFF; 
    overflow:hidden}
 .myphoto .box_photo img{ width:144px}
-.myphoto time{
+.myphoto time, .box_list time{
 	display:block; 
-	width:148px;
 	font-size:1em;
 	line-height:30px;
 	text-align:center;
 	color:#a95823;
 	letter-spacing:1px}
+.myphoto time{width:148px}	
+.myphoto p, .box_list p{font-size:1em; line-height:22px}
 .myphoto p{ 
    display:block; 
    width:100%; 
    height:44px; 
-   overflow:hidden;
-   font-size:1em;
-   line-height:22px}   
+   overflow:hidden}     
 	   	
 /*首頁影音專區*/
 .idTabs {
@@ -428,7 +427,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	 background:url(../images/icon_pin.png) no-repeat;
 	 margin-right:5px}
 
-#sub_nav, #page_container{ display:block; width:1042px; padding:0 30px 0 76px}
+#sub_nav, #page_container, #bar_tools{ display:block; width:1042px; padding:0 30px 0 76px}
 #sub_nav ul{ display:block; padding-bottom:50px}
 #sub_nav li a{
 	display:block;
@@ -443,7 +442,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	color:#fff; 
 	text-decoration:none; 
 	background:#ad3713}
-#sub_nav li a:hover, #sub_nav .subnavin{ color:#2c2c2c; text-decoration:none; background: #fffc00}
+#sub_nav li a:hover, #sub_nav .subnavin, .box_btn a:hover{ color:#2c2c2c; text-decoration:none; background: #fffc00}
 
 #page_container h4{
 	font-size:1.25em;
@@ -460,11 +459,110 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	display:block;
 	float:right;
 	margin:0 0 20px 20px}
-#page_container a{ color:#D6A238; text-decoration:none}
-#page_container a:visited{ color:#999; text-decoration:none}
-#page_container a:hover{color:#ad3713; text-decoration:underline}	
+.contact_info a{ color:#D6A238; text-decoration:none}
+.contact_info a:visited{ color:#999; text-decoration:none}
+.contact_info a:hover{color:#ad3713; text-decoration:underline}	
 	
 /* 3.5 影音專區 */
+.time{ 
+    display:block;
+	float:left;
+	width:50%;
+	font-size:1em;
+	line-height:25px}
+.box_btn{
+	display:block;
+	float:right;
+	width:50%;
+	text-align:right}
+.box_btn a{
+	padding:5px 15px;
+	font-size:.938em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#ad3713}
+.box_list{ display:block; width:1048px; margin-top:35px}
+.box_list li{
+	display:inline-block;
+	width:180px;
+	margin:0 11px 30px}
+.box_list .box_photo02{
+	display:block;
+	width:175px;
+	height:133px;
+	padding:5px 0 0 5px;
+	background:#FFF;
+	overflow:hidden}
+.box_list img{ width:170px; height:128px}
+.box_list time{ width:180px}
+.box_list p{ 
+   display:block; 
+   width:100%; 
+   height:48px; 
+   overflow:hidden}	
+.box_list a:link {text-decoration:none; color:#2c2c2c}
+.box_list a:visited {text-decoration:none; color:#8c8c8c}
+.box_list a:hover {text-decoration:underline; color:#ad3713}
+
+/*頁碼*/
+.digg { padding: 3px; margin: 15px; text-align: center}
+.digg a { 
+    border: #B77B65 1px solid; 
+	padding:5px 10px; 
+	margin: 5px; 
+	color: #000099;
+	background:#FFF; 
+	text-decoration: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px}
+.digg a:hover { border: #B77B65 1px solid; color:#2c2c2c; background: #fffc00}
+.digg a:active { border: ##B77B65 1px solid; color: #000099}
+.digg span.current {
+	border: #B77B65 1px solid; 
+	padding:5px 10px; 
+	font-weight: bold; 
+	margin: 5px; 
+	color: #fff; 
+	background-color: #AD3713;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px}
+.digg span.disabled {
+	border: #CFA899 1px solid; 
+	padding:5px 10px; 
+	margin: 2px; 
+	color: #999;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background:#E5DBD8} 
+
+/*進階搜尋框*/
+.slidingdiv {
+	width:1008px;
+	position:relative;
+	height:150px;
+    background:#CE9D8E;
+    padding:20px;
+    margin-top:25px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;}
+.slidingdiv .arrow_t_int{
+	width:0px;
+	height:0px;
+	border-width:15px;
+	border-style:solid;
+	border-color:transparent transparent #CE9D8E transparent ;
+	position:absolute;
+	top:-30px;
+	right:40px}	
+.show_hide{ display:none}	  	
 
 /* 3.6 聯絡我們 */
 .box_map{
@@ -491,11 +589,10 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	display:block;
 	float:right;
 	width:500px}
-.contact_info ul{}
 .contact_info li{
 	font-size:1em;
 	line-height:22px;
-	padding:10px 0;
+	padding:10px 0 10px 10px;
 	border-bottom:1px dashed #999}
 .contact_info li span{ padding-left:80px}	
 					   
