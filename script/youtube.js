@@ -3,10 +3,10 @@ $(function(){
 		var videoInfo="";
 		var videoLink=""
 		
-		var thumbSize = 'large',		// 設定要取得的縮圖是大圖還是小圖
+		var thumbSize = 'large',		// 設定要取得的縮圖是大圖 large 還是小圖 
 										// 大圖寬高為 480X360；小圖寬高為 120X90
-			imgWidth = '330',			// 限制圖片的寬
-			imgHeight = '248',			// 限制圖片的高
+			imgWidth = '300',			// 限制圖片的寬
+			imgHeight = '225',			// 限制圖片的高
 			swfWidth = '480',			// 指定 YouTube 影片的寬
 			swfHeight = '360',			// 指定 YouTube 影片的高
 			autoPlay = '&autoplay=0',	// 是否載入 YouTube 影片後自動播放；若不要自動播放則設成 0
@@ -14,7 +14,7 @@ $(function(){
 		
 		var $infoBox = $('.infobox');
 
-		$('.playlist>li>span').each(function(){
+		$('.playlist-02>li>span').each(function(){
 			// 取得要連結轉換的網址及訊息內容
 			var _this =  $(this),
 				_url = _this.attr('link'),

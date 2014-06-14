@@ -375,20 +375,32 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .tabs_number a:hover{ background:#fffc00; color:#000 }
 .tabs_number a.selected{ background:#fffc00; color:#000 }
 
-.playlist li { 
-   display:none;
-   position:relative; 
-   float:left;
-   width:330px;
-   margin:0 0 0 30px}
+.playlist-02{}
+.playlist li, .playlist-02 li{ position:relative; float:left}
+.playlist li { display:none; width:330px; margin:0 0 0 30px}
+.playlist-02 li{ display:block; width:300px; padding:30px 47px 0 0; margin:0}   
 .playlist .film_cover{
 	display:block;
 	width:330px;
 	height:248px;
 	overflow:hidden}
+.playlist-02 .film_cover{
+	display:block;
+	width:300px;
+	height:225px;
+	overflow:hidden}		
 .playlist img{ width:330px; height:auto}	 
 .playlist time{ font-size:0.813em; line-height:22px; padding:15px 0; color:#a44e15} 
 .playlist h4{ font-size:1em; line-height:25px; color:#000; padding-bottom:10px}
+.playlist-02 h5{
+	display:block;
+	width:300px;
+	height:46px; 
+    font-size:1em; 
+	line-height:22px; 
+	color:#2c2c2c;
+	overflow:hidden;
+	margin-top:10px}
 .playlist .filminfo{
 	display:block;
 	width:100%;
@@ -397,16 +409,16 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	font-size:0.938em;
 	line-height:22px;
 	margin-bottom:15px}   
-.playlist .fancybox-media{
+.playlist-02 .fancybox-media{
 	display:block;
 	position:absolute;
-	top:56px;
-	left:97px;
+	top:72px;
+	left:82px;
 	background:url(../images/btn_play.png) no-repeat;
 	width:136px;
 	height:136px;
 	text-indent:-9999px}
-.playlist .fancybox-media:hover{ background:url(../images/btn_play.png) 0 -136px no-repeat}
+.playlist-02 .fancybox-media:hover{ background:url(../images/btn_play.png) 0 -136px no-repeat}
 .playlist .btn_view{
 	display:block;
 	position:absolute;
