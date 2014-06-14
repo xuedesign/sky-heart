@@ -14,4 +14,21 @@ window.onload = externalLinks;
 //圖片延遲載入
 $(function() {
   $("#page_container img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
-      });	  
+      });
+	  
+//Lightbox效果
+$(document).ready(function() {
+  $(".fancybox-thumb").fancybox({
+	  prevEffect	: 'elastic',
+	  nextEffect	: 'elastic',
+	  helpers	: {
+		  title	: {
+			  type: 'inside'
+		  },
+		  thumbs	: {
+			  width	: 50,
+			  height	: 50
+		  }
+	  }
+  });
+});	  	  

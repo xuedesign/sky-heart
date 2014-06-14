@@ -375,10 +375,10 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .tabs_number a:hover{ background:#fffc00; color:#000 }
 .tabs_number a.selected{ background:#fffc00; color:#000 }
 
-.playlist-02{}
+.playlist-02{ margin-left:21px}
 .playlist li, .playlist-02 li{ position:relative; float:left}
 .playlist li { display:none; width:330px; margin:0 0 0 30px}
-.playlist-02 li{ display:block; width:300px; padding:30px 47px 0 0; margin:0}   
+.playlist-02 li{ display:block; width:300px; padding:30px 40px 0 0; margin:0}   
 .playlist .film_cover{
 	display:block;
 	width:330px;
@@ -399,6 +399,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
     font-size:1em; 
 	line-height:22px; 
 	color:#2c2c2c;
+	font-weight: normal;
 	overflow:hidden;
 	margin-top:10px}
 .playlist .filminfo{
@@ -576,18 +577,19 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	width:1008px;
 	position:relative;
 	height:130px;
-    background:#CE9D8E;
+    background:#E1AA9A;
     padding:20px;
     margin-top:25px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	border-radius: 8px;}
+	border-radius: 8px;
+	border-top:1px solid #E3C2B7}
 .box_search .arrow_t_int{
 	width:0px;
 	height:0px;
 	border-width:15px;
 	border-style:solid;
-	border-color:transparent transparent #CE9D8E transparent ;
+	border-color:transparent transparent #E1AA9A transparent ;
 	position:absolute;
 	top:-30px;
 	right:40px}	
@@ -623,7 +625,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .box_send{ display:block; padding-left:105px}			  	
 
 .search_right{ display:block; float:right; width:428px}
-.search_right p{ font-size:1em; line-height:25px; padding-bottom:15px}
+.search_right p{ font-size:1em; line-height:25px; padding-bottom:15px; text-shadow: 1px 1px 0 #E8C0B3;}
 .search_right span{
 	display:inline-block;
 	width:110px;
@@ -636,6 +638,35 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	letter-spacing:1px;
 	text-shadow: 1px 1px 0 #E8C0B3;
 	border-bottom:1px solid #AB7666}
+.event_info{
+	display:block;
+	position:relative;
+	width:1020px;
+	background:#E1AA9A/*#CE9D8E*/;
+	margin-top:25px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border:3px solid #E3C2B7}
+.event_info h5{
+	display:block;
+	width:1000px;
+	background:#C38A79;
+	-webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+	border-bottom:1px solid #F4C9BD;
+	font-size:1.125em;
+	line-height:35px;
+	color:#FFF;
+	font-weight:normal;
+	padding: 0 0 0 20px}
+.event_info p{
+	display:block;
+	padding:20px;
+	font-size:.938em;
+	line-height:25px;
+	text-shadow: 1px 1px 0 #E8C0B3}		
 
 
 /* 3.6 聯絡我們 */
