@@ -77,7 +77,24 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	padding:3px 8px;
 	cursor:pointer;
 	margin:0 5px}
-.btn_send:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}		
+.btn_send:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}
+.mytxtarea{
+	border:1px solid #A2A1A1;
+	padding:5px 8px;
+	margin-right:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	height: 22px}
+.mytxtarea:focus{
+	-webkit-box-shadow: 0 0 10px #803A11;
+	-moz-box-shadow: 0 0 10px #803A11;
+	-o-box-shadow: 0 0 10px #803A11;
+	-ms-box-shadow: 0 0 10px #803A11;
+	box-shadow: 0 0 10px #803A11}
+.w250{ width:365px}		
 
 /* 2.基本結構
 ===============================================================================================*/
@@ -401,7 +418,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	color:#2c2c2c;
 	font-weight: normal;
 	overflow:hidden;
-	margin-top:10px}
+	margin-top:-15px;}
 .playlist .filminfo{
 	display:block;
 	width:100%;
@@ -456,7 +473,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	 background:url(../images/icon_pin.png) no-repeat;
 	 margin-right:5px}
 
-#sub_nav, #page_container, #bar_tools{ display:block; width:1042px; padding:0 30px 0 76px}
+#sub_nav, #bar_tools{ display:block; width:1042px; padding:0 30px 0 76px}
 #sub_nav ul{ display:block; padding-bottom:50px}
 #sub_nav li a{
 	display:block;
@@ -473,24 +490,39 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	background:#ad3713}
 #sub_nav li a:hover, #sub_nav .subnavin, .box_btn a:hover{ color:#2c2c2c; text-decoration:none; background: #fffc00}
 
+#page_container{
+	display:block; 
+	width:1042px; 
+	padding:0 30px 0 76px}
 #page_container h4{
 	font-size:1.25em;
 	line-height:30px;
 	font-weight:normal;
 	color:#ad3713;
 	padding-bottom:15px}	
-#page_container p{ font-size:1em; line-height:25px;}
+#page_container p{ font-size:1em; line-height:25px; padding-bottom:25px}
+#page_container img{ margin-bottom:20px}
 #page_container .img_left{
 	display:block;
 	float:left;
-	margin:0 20px 20px 0}
+	margin:0 20px 0 0}
 #page_container .img_right{
 	display:block;
 	float:right;
-	margin:0 0 20px 20px}
-.contact_info a{ color:#D6A238; text-decoration:none}
-.contact_info a:visited{ color:#999; text-decoration:none}
-.contact_info a:hover{color:#ad3713; text-decoration:underline}	
+	margin:0 0 0 20px}
+
+/*3.3 訊息公告*/
+.table_margin{ margin:30px 0}
+.table_margin td{ border-bottom:1px dashed #CCABA5}
+.item_menu{ 
+    width:150px; 
+	height:32px; 
+	font-size:1em; 
+	line-height:25px}
+.news_main{ display:block; padding-top:30px}
+.news_main a:link {text-decoration:none; color:#D6A238; font-weight:bold}
+.news_main a:visited {text-decoration:none; color:#8c8c8c}
+.news_main a:hover {text-decoration:underline; color:#ad3713}		
 	
 /* 3.5 影音專區 */
 .time{ 
@@ -605,23 +637,6 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
     display:inline-block; 
 	width:70px;
 	text-shadow: 1px 1px 0 #E8C0B3}
-.mytxtarea{
-	border:1px solid #A2A1A1;
-	padding:5px 8px;
-	margin-right:5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-ms-border-radius: 5px;
-	border-radius: 5px;
-	height: 22px}
-.mytxtarea:focus{
-	-webkit-box-shadow: 0 0 10px #803A11;
-	-moz-box-shadow: 0 0 10px #803A11;
-	-o-box-shadow: 0 0 10px #803A11;
-	-ms-box-shadow: 0 0 10px #803A11;
-	box-shadow: 0 0 10px #803A11}
-.w250{ width:365px}
 .box_send{ display:block; padding-left:105px}			  	
 
 .search_right{ display:block; float:right; width:428px}
@@ -700,7 +715,9 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	padding:10px 0 10px 10px;
 	border-bottom:1px dashed #999}
 .contact_info li span{ padding-left:80px}	
-					   
+.contact_info a{ color:#D6A238; text-decoration:none}
+.contact_info a:visited{ color:#8c8c8c; text-decoration:none}
+.contact_info a:hover{color:#ad3713; text-decoration:underline}					   
 
 
 /* 4.列印樣式
