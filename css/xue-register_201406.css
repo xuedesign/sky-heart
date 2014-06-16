@@ -1,0 +1,353 @@
+/**********************************************************************************************
+
+	Title: CSS for xuedeisgn
+	Author: Elmo Wu (by xuedesign studio)
+	Date: 2014/06 
+
+***********************************************************************************************
+		1 通用
+		2.基本結構
+		  2-1. 頁面頂部
+		  2-2. 網站主選單
+		  2-3. 版權列
+		  2-4. 頁面中間區塊
+		3.內頁結構
+		4.列印樣式   		
+***********************************************************************************************/
+
+/* 1. 通用 
+===============================================================================================*/
+body{
+	background:#190404;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:20px;
+	color:#2c2c2c}
+a:link {text-decoration:none; color:#2c2c2c}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#ad3713}
+form{margin:0; padding:0}
+image{border:0}
+.clean{ clear:both}
+.hidden{ display:none}
+a.btn_go{
+	display:block;
+	width:169px;
+	height:31px;
+	padding-top:7px;
+	background:url(../images/btn_go.png) no-repeat;
+	font-size:0.938em;
+	line-height:25px;
+	color:#FFF;
+	text-align:center}
+a.btn_go:hover{
+	color: #FFBD5F;
+	text-decoration:none;
+    background:url(../images/btn_go.png) 0 -38px no-repeat}
+a.btn_more{
+	display:block;
+	width:144px;
+	height:35px;
+	background:url(../images/btn_more.png) no-repeat;
+	padding-top:9px;
+	text-align:center;
+	font-size:0.938em;
+	line-height:22px;
+	color:#2c2c2c}
+a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
+.btn_send{
+	display:inline-block;
+	width:110px;
+	border:none;
+	font-size:.938em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#ad3713;
+	padding:3px 8px;
+	cursor:pointer;
+	margin:0 5px}
+.btn_send:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}
+.mytxtarea{
+	border:1px solid #A2A1A1;
+	padding:5px 8px;
+	margin-right:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	height: 22px}
+.mytxtarea:focus{
+	-webkit-box-shadow: 0 0 10px #803A11;
+	-moz-box-shadow: 0 0 10px #803A11;
+	-o-box-shadow: 0 0 10px #803A11;
+	-ms-box-shadow: 0 0 10px #803A11;
+	box-shadow: 0 0 10px #803A11}
+.w250{ width:365px}		
+
+/* 2.基本結構
+===============================================================================================*/
+#wrap{ display:block; width:1276px; margin:0 auto}
+
+/* 2-1. 頁面頂部 */
+header{ display:block; width:100%}
+.top_bar{ 
+   display:block; 
+   width:1156px; 
+   height:40px;
+   background:#3e0b0b;
+   padding:10px 60px 0;
+   font-size:0.938em;
+   line-height:25px;
+   color:#FFF}
+.top_left, .top_right{display:block; width:50%} 
+.top_left{ float:left}
+.top_right{ float:right}
+.top_right a{
+    display:block;
+    float:right;
+    width:16px;
+	height:16px;
+	text-indent:-9999px;
+	background:url(../images/icon_mail.png) 0 0 no-repeat;
+	margin:4px 0 0 10px}
+.top_right a:hover{ background:url(../images/icon_mail.png) 0 -16px no-repeat}
+.top_right span{ padding-left:380px}	 
+.top_banner{ 
+   clear:both; 
+   display:block;
+   position:relative; 
+   width:1276px; 
+   height:248px;
+   background:url(../images/bg_banner-01.jpg) no-repeat} 
+.top_banner h1 a{
+	display:block;
+	position:absolute;
+	top:68px;
+	left:108px;
+	width:428px;
+	height:170px;
+	background:url(../images/bg_h1.png) no-repeat;
+	text-indent:-9999px}
+	
+/* 2-2. 網站主選單 */
+nav{ display:block; width:414px; margin:0 auto}
+nav h3{ display:none}
+.navigation li {float: left}
+.navigation li a{
+	display: block; 
+	width:138px; 
+	height:49px}
+.nav_01, .nav_02, .nav_03{ text-indent:-9999px; background: url(../images/btn_nav-01.png) no-repeat}	
+.nav_01{ background-position: 0 0} 
+.nav_01:hover, .nav_01.navin{ background-position: 0 -49px}
+.nav_02{ background-position: -138px 0}
+.nav_02:hover, .nav_02.navin{ background-position: -138px -49px}
+.nav_03{ background-position: -276px 0}
+.nav_03:hover, .nav_03.navin{ background-position: -276px -49px}
+.navigation ul{
+	display: none;
+	float: left;
+	position: absolute;			
+	left: 12px;
+	z-index:999;	
+	margin: 0}
+.navigation li:hover > ul{display: block}			
+.navigation ul a {
+	width:80px;
+	height:25px;
+	padding: 5px 6px;
+	font-size:1em;	
+	color: #fff;
+	text-align:center;		
+	background: #802F1B;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top:3px;
+	overflow:hidden}
+.navigation ul a:hover { color:#2c2c2c; background:#fffc00; text-decoration:none}
+
+   
+/* 2-3. 版權列 */ 
+footer{
+   display:block;
+   position:relative;
+   width:100%;
+   height:143px;
+   background:url(../images/bg_footer.png) repeat-x;
+   padding-top:40px}
+footer p{
+	text-align:center;
+	font-size:0.938em;
+	line-height:25px;
+	color:#FFF;
+	padding-top:15px}
+a.maplink{ color:#0a0a96; text-decoration:underline; font-weight:bold; padding-left:10px}
+a.maplink:visited{ color:#0a0a96; text-decoration:underline; font-weight:bold}
+a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
+.to_register{ position:absolute; top:120px; right:67px}		   
+	 
+/* 2-4. 頁面中間區塊 */	   
+#contenter{
+	display:block;
+	position:relative;
+	width:1148px;
+	padding:20px 64px 40px;
+	background:url(../images/bg_container.jpg) repeat-y}
+.to_more{ position:absolute; top:3px; right:0}	
+
+
+/* 3.內頁結構
+===============================================================================================*/
+/*3-1. 登入頁 */
+.box_login{
+	display:block;
+	width:361px;
+	padding:22px 0 0 0;
+	height:250px;
+	margin:0 auto;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 9px #c8c4a2;
+	-moz-box-shadow: 0 0 9px #c8c4a2;
+	-o-box-shadow: 0 0 9px #c8c4a2;
+	-ms-box-shadow: 0 0 9px #c8c4a2;
+	box-shadow: 0 0 9px #c8c4a2;
+	background: url(../images/bg_login.png) no-repeat #FFF}
+.box_login h4{ text-align:center; letter-spacing:1px; color:#6C331A}	
+.text_area{
+	display:block;
+	width:300px;
+	margin:18px auto 0 auto;
+	padding:10px;
+	border:1px solid #a1884d;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px}
+.text_member{
+	display:block;
+	background:url(../images/textarea_login.png) no-repeat;
+	width:301px;
+	height:96px;
+	margin:22px auto 0 auto}
+.btn_login{
+	display:block;
+	width:149px;
+	height:40px;
+	margin:29px auto 20px auto;
+	background:url(../images/btn_login.png) no-repeat;
+	border:none;
+	cursor:pointer;
+	font-size:1em;
+	color:#FFF;
+	text-align:center;
+	letter-spacing:2px}	
+.btn_login:hover{ background:url(../images/btn_login.png) 0 -40px no-repeat}
+.text_input{
+	display:block;
+	width:220px;
+	margin-left:10px;
+	font-size:0.938em;
+	line-height:22px;
+	background:none;
+	padding:5px 8px;
+	border:none}
+#username{ padding-top:15px; margin-bottom:22px}
+.login_note{
+	display:block;
+	width:410px;
+	margin:15px auto 0 auto}
+.login_note p{ font-size:.938em; line-height:25px; text-align:center}
+.login_note a, .login_note a:visited{
+	display:block;
+	width:60px;
+	margin:20px auto 0 auto;
+	padding:5px 15px;
+	font-size:.938em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#CBC1BF}
+.login_note a:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}	
+
+.bg_title-01, .bg_title-02, .bg_title-03, .bg_title-inside{ 
+    display:block;
+	position:relative; 
+	height:48px; 
+	background: url(../images/bg_title.png) no-repeat}
+.bg_title-01{ width:1148px}
+.bg_title-02{ width:694px; background-position: 0 -48px}
+.bg_title-03{ width:412px; background-position:0 -96px}
+.bg_title-inside { width:1148px; margin-bottom:20px}
+.bar_title h3{
+	position:absolute;
+	top:10px;
+	left:75px;
+	font-size:1.063em;
+	line-height:30px;
+	font-weight:normal;
+	color:#FFF;
+	letter-spacing:1px}
+
+
+#page_container{
+	display:block; 
+	width:1042px; 
+	padding:0 30px 0 76px}
+#page_container h4{
+	font-size:1.25em;
+	line-height:30px;
+	font-weight:normal;
+	color:#ad3713;
+	padding-bottom:15px}	
+#page_container p{ font-size:1em; line-height:25px; padding-bottom:25px}
+
+/*頁碼*/
+.digg { padding: 3px; margin: 15px; text-align: center}
+.digg a { 
+    border: #B77B65 1px solid; 
+	padding:5px 10px; 
+	margin: 5px; 
+	color: #000099;
+	background:#FFF; 
+	text-decoration: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px}
+.digg a:hover { border: #B77B65 1px solid; color:#2c2c2c; background: #fffc00}
+.digg a:active { border: ##B77B65 1px solid; color: #000099}
+.digg span.current {
+	border: #B77B65 1px solid; 
+	padding:5px 10px; 
+	font-weight: bold; 
+	margin: 5px; 
+	color: #fff; 
+	background-color: #AD3713;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px}
+.digg span.disabled {
+	border: #CFA899 1px solid; 
+	padding:5px 10px; 
+	margin: 2px; 
+	color: #999;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background:#E5DBD8} 
+	
+/* 4.列印樣式
+===============================================================================================*/
