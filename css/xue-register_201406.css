@@ -12,6 +12,8 @@
 		  2-3. 版權列
 		  2-4. 頁面中間區塊
 		3.內頁結構
+		  3-1. 登入頁
+		  3-2. 掛號列表 
 		4.列印樣式   		
 ***********************************************************************************************/
 
@@ -22,7 +24,7 @@ body{
 	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:20px;
-	color:#2c2c2c}
+	color:#393939}
 a:link {text-decoration:none; color:#2c2c2c}
 a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#ad3713}
@@ -70,7 +72,15 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	padding:3px 8px;
 	cursor:pointer;
 	margin:0 5px}
-.btn_send:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}
+.btn_send:hover{
+	color:#2c2c2c; 
+	text-decoration:none; 
+	background: #fffc00;
+	-webkit-box-shadow: 0 0 8px #BDB45A;
+	-moz-box-shadow: 0 0 8px #BDB45A;
+	-o-box-shadow: 0 0 8px #BDB45A;
+	-ms-box-shadow: 0 0 8px #BDB45A;
+	box-shadow: 0 0 8px #BDB45A}
 .mytxtarea{
 	border:1px solid #A2A1A1;
 	padding:5px 8px;
@@ -82,11 +92,11 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	border-radius: 5px;
 	height: 22px}
 .mytxtarea:focus{
-	-webkit-box-shadow: 0 0 10px #803A11;
-	-moz-box-shadow: 0 0 10px #803A11;
-	-o-box-shadow: 0 0 10px #803A11;
-	-ms-box-shadow: 0 0 10px #803A11;
-	box-shadow: 0 0 10px #803A11}
+	-webkit-box-shadow: 0 0 8px #BDB45A;
+	-moz-box-shadow: 0 0 8px #BDB45A;
+	-o-box-shadow: 0 0 8px #BDB45A;
+	-ms-box-shadow: 0 0 8px #BDB45A;
+	box-shadow: 0 0 8px #BDB45A}
 .w250{ width:365px}		
 
 /* 2.基本結構
@@ -106,17 +116,24 @@ header{ display:block; width:100%}
    color:#FFF}
 .top_left, .top_right{display:block; width:50%} 
 .top_left{ float:left}
-.top_right{ float:right}
-.top_right a{
-    display:block;
-    float:right;
-    width:16px;
-	height:16px;
-	text-indent:-9999px;
-	background:url(../images/icon_mail.png) 0 0 no-repeat;
-	margin:4px 0 0 10px}
-.top_right a:hover{ background:url(../images/icon_mail.png) 0 -16px no-repeat}
-.top_right span{ padding-left:380px}	 
+.top_right{ float:right; text-align:right}
+.btn_logout{
+	width:60px;
+	border:none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font-size:1em;
+	line-height:22px;
+	letter-spacing:1px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#ad3713;
+	padding:0 5px;
+	cursor:pointer;
+	margin:0 5px}
+.btn_logout:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}
+		 
 .top_banner{ 
    clear:both; 
    display:block;
@@ -198,7 +215,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	position:relative;
 	width:1148px;
 	padding:20px 64px 40px;
-	background:url(../images/bg_container.jpg) repeat-y}
+	background:url(../images/bg_container-01.jpg) repeat-y}
 .to_more{ position:absolute; top:3px; right:0}	
 
 
@@ -283,6 +300,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	background:#CBC1BF}
 .login_note a:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}	
 
+/*3-2. 掛號列表 */
 .bg_title-01, .bg_title-02, .bg_title-03, .bg_title-inside{ 
     display:block;
 	position:relative; 
@@ -302,7 +320,58 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	color:#FFF;
 	letter-spacing:1px}
 
+#page_main{
+	display:block;
+	width:1148px;
+	margin:20px 0}
+.box_search{
+	display:block;
+	position:relative;
+	width:980px;
+	background:#fdfce9;
+	opacity:0.8;
+	margin:25px auto;
+	padding:10px 20px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border:3px solid #c0aa6e;
+	-webkit-box-shadow: 0 0 8px #B6B6B6;
+	-moz-box-shadow: 0 0 8px #B6B6B6;
+	box-shadow: 0 0 8px #B6B6B6}
+.box_search h5{
+	display:block;
+	width:1000px;
+	font-size:1.125em;
+	line-height:45px;
+	color:#5B2E10;
+	font-weight:normal}
+.keyword, .eventime{ display:block; margin-bottom:15px}
+.box_send{ 
+    display:block; 
+	position:absolute;
+	top:108px;
+	right:230px}
 
+.mytable{ width:100%}
+.mytable td{ padding:8px 5px; font-size:1em; line-height:25px}
+.mytable .news_class{ width:15%; background:url(../images/icon_paper.png) 0 5px no-repeat}
+.mytable .news_class span{ 
+   padding:3px 15px; 
+   background:#DFA96C; 
+   text-align:center; 
+   color:#fff;
+   text-shadow: 1px 1px 0 #DFA96C;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   margin:0 0 0 40px}
+.mytable .news_date{ 
+   width:15%;
+   font-size:1em; 
+   text-align:right; 
+   color:#ad3713}
+	
 #page_container{
 	display:block; 
 	width:1042px; 
@@ -316,7 +385,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 #page_container p{ font-size:1em; line-height:25px; padding-bottom:25px}
 
 /*頁碼*/
-.digg { padding: 3px; margin: 15px; text-align: center}
+.digg { padding: 3px; margin:15px 0 0 0; text-align: center}
 .digg a { 
     border: #B77B65 1px solid; 
 	padding:5px 10px; 
