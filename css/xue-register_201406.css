@@ -115,6 +115,12 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	-webkit-box-shadow: -2px -2px 0 #CDCB00;
 	-moz-box-shadow: -2px -2px 0 #CDCB00;
 	box-shadow: -2px -2px 0 #CDCB00}
+.btn_gray{
+	color:#C7C5C5;
+	background:#aaa;
+    -webkit-box-shadow: 2px 2px 0 #BCAF9B;
+	-moz-box-shadow: 2px 2px 0 #BCAF9B;
+	box-shadow: 2px 2px 0 #BCAF9B}	
 
 .mytxtarea{
 	border:1px solid #A2A1A1;
