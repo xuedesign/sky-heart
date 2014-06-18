@@ -71,16 +71,51 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	background:#ad3713;
 	padding:3px 8px;
 	cursor:pointer;
-	margin:0 5px}
+	margin:0 5px;
+	-webkit-box-shadow: 2px 2px 0 #78402C;
+	-moz-box-shadow: 2px 2px 0 #78402C;
+	box-shadow: 2px 2px 0 #78402C}
 .btn_send:hover{
 	color:#2c2c2c; 
 	text-decoration:none; 
 	background: #fffc00;
-	-webkit-box-shadow: 0 0 8px #BDB45A;
-	-moz-box-shadow: 0 0 8px #BDB45A;
-	-o-box-shadow: 0 0 8px #BDB45A;
-	-ms-box-shadow: 0 0 8px #BDB45A;
-	box-shadow: 0 0 8px #BDB45A}
+	-webkit-box-shadow: -2px -2px 0 #CDCB00;
+	-moz-box-shadow: -2px -2px 0 #CDCB00;
+	box-shadow: -2px -2px 0 #CDCB00}
+.mybtn{
+	width:80px;
+	border:none;
+	font-size:0.938em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#302F2E; 
+	text-decoration:none; 
+	padding:3px 8px;
+	cursor:pointer;
+	margin:0 5px}
+.btn_mi{
+	background:#D8C9B1;
+    -webkit-box-shadow: 2px 2px 0 #BCAF9B;
+	-moz-box-shadow: 2px 2px 0 #BCAF9B;
+	box-shadow: 2px 2px 0 #BCAF9B}
+.btn_pink{
+	background:#ECB8B3;
+    -webkit-box-shadow: 2px 2px 0 #CE9B96;
+	-moz-box-shadow: 2px 2px 0 #CE9B96;
+	box-shadow: 2px 2px 0 #CE9B96}	
+.btn_naturals{
+	background:#E4C89C;
+	-webkit-box-shadow: 2px 2px 0 #C59F63;
+	-moz-box-shadow: 2px 2px 0 #C59F63;
+	box-shadow: 2px 2px 0 #C59F63} 
+.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover{
+	background:#fffc00;
+	-webkit-box-shadow: -2px -2px 0 #CDCB00;
+	-moz-box-shadow: -2px -2px 0 #CDCB00;
+	box-shadow: -2px -2px 0 #CDCB00}
+
 .mytxtarea{
 	border:1px solid #A2A1A1;
 	padding:5px 8px;
@@ -297,8 +332,17 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	border-radius: 10px;
 	color:#fff; 
 	text-decoration:none; 
-	background:#CBC1BF}
-.login_note a:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}	
+	background:#CBC1BF;
+	-webkit-box-shadow: 2px 2px 0 #8F8583;
+	-moz-box-shadow: 2px 2px 0 #8F8583;
+	box-shadow: 2px 2px 0 #8F8583}
+.login_note a:hover{
+	color:#2c2c2c; 
+	text-decoration:none; 
+	background: #fffc00;
+	-webkit-box-shadow: -2px -2px 0 #CDCB00;
+	-moz-box-shadow: -2px -2px 0 #CDCB00;
+	box-shadow: -2px -2px 0 #CDCB00}	
 
 /*3-2. 掛號列表 */
 .bg_title-01, .bg_title-02, .bg_title-03, .bg_title-inside{ 
@@ -354,7 +398,18 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	right:230px}
 
 .mytable{ width:100%}
-.mytable td{ padding:8px 5px; font-size:1em; line-height:25px}
+.mytable-02{ width:97%; margin-bottom:35px}
+.mytable-02 th{ 
+   font-size:1.125em; 
+   line-height:25px; 
+   font-weight:bold;
+   color:#5B2E10; 
+   border-bottom:2px double #B78562;
+   padding-bottom:8px}
+.mytable-02 tr:hover{ background:#F5F1E2}  
+.mytable td, .mytable-02 td{ padding:8px 5px; font-size:1em; line-height:25px}
+.mytable-02 td{ text-align:center; border-bottom:1px dashed #B78562}
+.mytable-02 .td_motion{ width:300px}
 .mytable .news_class{ width:15%; background:url(../images/icon_paper.png) 0 5px no-repeat}
 .mytable .news_class span{ 
    padding:3px 15px; 
@@ -370,7 +425,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    width:15%;
    font-size:1em; 
    text-align:right; 
-   color:#ad3713}
+   color:#ad3713}  
 	
 #page_container{
 	display:block; 
