@@ -425,7 +425,71 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    width:15%;
    font-size:1em; 
    text-align:right; 
-   color:#ad3713}  
+   color:#ad3713}
+.list_type{
+	display: block;
+	position:absolute;
+	top:9px;
+	right:60px;
+	width:265px;}
+.list_type li a{
+	display:block;
+	float:left;
+	width:70px;
+	padding:3px 8px;
+	background:#BB5C39;
+	font-size:0.938em;
+	line-height:25px;
+	color:#fff;
+	text-align:center; 
+	text-decoration:none}
+.list_type .list_head a{
+	border-top:1px solid #99553B;
+	border-left:1px solid #99553B;
+	-webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
+	-webkit-box-shadow: 0 1px 0 #78402C;
+    -moz-box-shadow: 0 1px 0 #78402C;
+    box-shadow: 0 1px 0 #78402C}
+.list_type .list_head a:hover, .list_type .list_head .listin{
+	color:#2c2c2c; 
+	background:#fffc00;
+	border-top:none;
+	border-left:none;
+	-webkit-box-shadow: -1px -1px 0 #A09F38;
+	-moz-box-shadow: -1px -1px 0 #A09F38;
+	box-shadow: -1px -1px 0 #A09F38}	
+.list_type .list_mid a{
+	margin:0 1px;
+	border-top:1px solid #99553B;
+	-webkit-box-shadow: 0 1px 0 #78402C;
+    -moz-box-shadow: 0 1px 0 #78402C;
+    box-shadow: 0 1px 0 #78402C}
+.list_type .list_mid a:hover, .list_type .list_mid .listin{
+	color:#2c2c2c; 
+	background:#fffc00;
+	border-top:none;
+	-webkit-box-shadow: 0 -1px 0 #A09F38;
+	-moz-box-shadow: 0 -1px 0 #A09F38;
+	box-shadow: 0 -1px 0 #A09F38}		
+.list_type .list_foot a{
+	border-top:1px solid #99553B;
+	border-right:1px solid #99553B;
+	-webkit-border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
+	-webkit-box-shadow: 1px 1px 0 #78402C;
+    -moz-box-shadow: 1px 1px 0 #78402C;
+    box-shadow: 1px 1px 0 #78402C}
+.list_type .list_foot a:hover, .list_type .list_foot .listin{
+	color:#2c2c2c; 
+	background:#fffc00;
+	border-top:none;
+	border-right:none;
+	-webkit-box-shadow: 0 -1px 0 #A09F38;
+	-moz-box-shadow: 0 -1px 0 #A09F38;
+	box-shadow: 0 -1px 0 #A09F38}			         
 	
 #page_container{
 	display:block; 
