@@ -122,7 +122,7 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	-moz-box-shadow: 2px 2px 0 #BCAF9B;
 	box-shadow: 2px 2px 0 #BCAF9B}	
 
-.mytxtarea{
+.mytxtarea, .mytxtarea-02{
 	border:1px solid #A2A1A1;
 	padding:5px 8px;
 	margin-right:5px;
@@ -130,9 +130,10 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
-	border-radius: 5px;
-	height: 22px}
-.mytxtarea:focus{
+	border-radius: 5px}
+.mytxtarea{height: 22px}
+.mytxtarea-02{ vertical-align:middle}	
+.mytxtarea:focus, .mytxtarea-02:focus{
 	-webkit-box-shadow: 0 0 8px #BDB45A;
 	-moz-box-shadow: 0 0 8px #BDB45A;
 	-o-box-shadow: 0 0 8px #BDB45A;
@@ -396,15 +397,13 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	line-height:45px;
 	color:#5B2E10;
 	font-weight:normal}
-.keyword, .eventime{ display:block; margin-bottom:15px}
-.box_send{ 
-    display:block; 
-	position:absolute;
-	top:108px;
-	right:230px}
+.keyword, .eventime, .number, .thing, .name{ display:block; margin-bottom:15px}
+.box_send, .box_send-02{ display:block;	position:absolute; right:230px}
+.box_send{ top:108px}
+.box_send-02{ top:130px}
 
 .mytable{ width:100%}
-.mytable-02{ width:97%; margin-bottom:35px}
+.mytable-02, .mytable-03{ width:97%; margin-bottom:35px}
 .mytable-02 th{ 
    font-size:1.125em; 
    line-height:25px; 
@@ -413,9 +412,10 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    border-bottom:2px double #B78562;
    padding-bottom:8px}
 .mytable-02 tr:hover{ background:#F5F1E2}  
-.mytable td, .mytable-02 td{ padding:8px 5px; font-size:1em; line-height:25px}
-.mytable-02 td{ text-align:center; border-bottom:1px dashed #B78562}
+.mytable td, .mytable-02 td, .mytable-03 td{ padding:8px 5px; font-size:1em; line-height:25px}
+.mytable-02 td, .mytable-03 td{ text-align:center; border-bottom:1px dashed #B78562}
 .mytable-02 .td_motion{ width:300px}
+.mytable-02 .td_motion-02{ width:150px}
 .mytable .news_class{ width:15%; background:url(../images/icon_paper.png) 0 5px no-repeat}
 .mytable .news_class span{ 
    padding:3px 15px; 
