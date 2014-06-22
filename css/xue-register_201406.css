@@ -13,7 +13,8 @@
 		  2-4. 頁面中間區塊
 		3.內頁結構
 		  3-1. 登入頁
-		  3-2. 掛號列表 
+		  3-2. 掛號列表
+		  3-3. 病歷查詢 
 		4.列印樣式   		
 ***********************************************************************************************/
 
@@ -82,19 +83,26 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	-webkit-box-shadow: -2px -2px 0 #CDCB00;
 	-moz-box-shadow: -2px -2px 0 #CDCB00;
 	box-shadow: -2px -2px 0 #CDCB00}
-.mybtn{
-	width:80px;
+.mybtn, .mybtn-02{
 	border:none;
-	font-size:0.938em;
-	line-height:25px;
+	margin:0 5px;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	color:#302F2E; 
 	text-decoration:none; 
+	cursor:pointer}
+.mybtn{
+	width:80px;
 	padding:3px 8px;
-	cursor:pointer;
-	margin:0 5px}
+	font-size:0.938em;
+	line-height:25px}
+.mybtn-02{
+	width:80px;
+	padding:2px 8px;
+	font-size:0.938em;
+	line-height:22px}	
 .btn_mi{
 	background:#D8C9B1;
     -webkit-box-shadow: 2px 2px 0 #BCAF9B;
@@ -109,8 +117,13 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	background:#E4C89C;
 	-webkit-box-shadow: 2px 2px 0 #C59F63;
 	-moz-box-shadow: 2px 2px 0 #C59F63;
-	box-shadow: 2px 2px 0 #C59F63} 
-.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover{
+	box-shadow: 2px 2px 0 #C59F63}
+.btn_green{
+	background:#a9e7a1;
+	-webkit-box-shadow: 2px 2px 0 #5c8757;
+	-moz-box-shadow: 2px 2px 0 #5c8757;
+	box-shadow: 2px 2px 0 #5c8757}	 
+.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover, .btn_green:hover{
 	background:#fffc00;
 	-webkit-box-shadow: -2px -2px 0 #CDCB00;
 	-moz-box-shadow: -2px -2px 0 #CDCB00;
@@ -403,7 +416,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .box_send-02{ top:130px}
 
 .mytable{ width:100%}
-.mytable-02, .mytable-03{ width:97%; margin-bottom:35px}
+.mytable-02, .mytable-03, .mytable-04{ width:97%; margin-bottom:35px}
 .mytable-02 th{ 
    font-size:1.125em; 
    line-height:25px; 
@@ -411,7 +424,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    color:#5B2E10; 
    border-bottom:2px double #B78562;
    padding-bottom:8px}
-.mytable-02 tr:hover{ background:#F5F1E2}  
+.mytable-02 tr:hover, .mytable-04 tr:hover{ background:#F5F1E2}  
 .mytable td, .mytable-02 td, .mytable-03 td{ padding:8px 5px; font-size:1em; line-height:25px}
 .mytable-02 td, .mytable-03 td{ text-align:center; border-bottom:1px dashed #B78562}
 .mytable-02 .td_motion{ width:300px}
@@ -432,6 +445,34 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    font-size:1em; 
    text-align:right; 
    color:#ad3713}
+.mytable-04 td{
+	padding:8px 5px;　
+   font-size:.938em; 
+   line-height:25px; 
+   border-bottom:1px dashed #B78562;
+   vertical-align:middle}
+.mytable-04 span{
+	font-size:0.938em;
+	padding:3px 15px;
+	background:#DDD7C1/*#D6D0B9*/;
+	color:#3B3B39;
+	margin-right:15px;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;}   
+.mytable-04 h5{ 
+   font-size:1em; 
+   line-height:25px;
+   color:#ad3713;
+   letter-spacing:1px}
+.mytable-04 ul{ margin:0; padding:0}
+.mytable-04 li{ display:inline-block; width:285px}
+.mytable-04 .tdw-120{ width:120px}
+.mytable-04 .tdw-82{ width:82px}
+.mytable-04 .tdw-97{ width:97px}
+.mytable-04 .tdw-127{ width:127px}
+.mytable-04 .tdw-144{ width:144px}   
+   
 .list_type{
 	display: block;
 	position:absolute;
@@ -497,7 +538,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-moz-box-shadow: 0 -1px 0 #A09F38;
 	box-shadow: 0 -1px 0 #A09F38}			         
 	
-#page_container{
+#page_container, #page_record{
 	display:block; 
 	width:1042px; 
 	padding:0 30px 0 76px}
@@ -508,6 +549,38 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	color:#ad3713;
 	padding-bottom:15px}	
 #page_container p{ font-size:1em; line-height:25px; padding-bottom:25px}
+.box_record{ display:block; padding:10px 0; margin-bottom:20px}
+.record_top{ display:block; width:1000px; border-bottom:1px solid #B78562}
+.record_top h5{ 
+    display:block;
+	float:left;
+	width:70%;
+	padding:5px 0 10px 0;
+    font-size:1em; 
+	letter-spacing:1px; 
+	color:#ad3713}
+.record_top .record_tools{
+	display:block;
+	float:right;
+	width:30%;
+	text-align:right}
+.record_note{ display:block; width:1000px; padding-top:10px}
+.record_note h5{
+	width:35px;
+	margin-bottom:5px;
+	padding:2px 15px;
+	font-size:1em;
+	line-height:20px;
+	font-weight:normal;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;}
+.record_note p{
+	font-size:0.938em;
+	line-height:25px;
+	padding-bottom:15px}
+.record_note .ti-q{ background:#ECB8B3}
+.record_note .ti-a{ background:#A9E7A1}	
 
 /*頁碼*/
 .digg { padding: 3px; margin:15px 0 0 0; text-align: center}
@@ -541,7 +614,16 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	background:#E5DBD8} 
+	background:#E5DBD8}
 	
+/*3-3. 病歷查詢 */
+.bar_tools{
+	display:block;
+	float:right;
+	width:40%;
+	text-align:right;
+	padding: 8px 30px 0 0}
+
+
 /* 4.列印樣式
 ===============================================================================================*/
