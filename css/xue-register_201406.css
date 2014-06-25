@@ -14,8 +14,7 @@
 		3.內頁結構
 		  3-1. 登入頁
 		  3-2. 掛號列表
-		  3-3. 病歷查詢 
-		4.列印樣式   		
+		  3-3. 病歷查詢   		
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -419,7 +418,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .box_send-02{ top:130px}
 
 .mytable{ width:100%}
-.mytable-02, .mytable-03, .mytable-04{ width:97%; margin-bottom:35px}
+.mytable-02, .mytable-03, .mytable-04, .mytable-05{ width:97%; margin-bottom:35px}
 .mytable-02 th{ 
    font-size:1.125em; 
    line-height:25px; 
@@ -427,7 +426,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    color:#5B2E10; 
    border-bottom:2px double #B78562;
    padding-bottom:8px}
-.mytable-02 tr:hover, .mytable-04 tr:hover{ background:#F5F1E2}  
+.mytable-02 tr:hover, .mytable-04 tr:hover, .mytable-05 tr:hover{ background:#F5F1E2}  
 .mytable td, .mytable-02 td, .mytable-03 td{ padding:8px 5px; font-size:1em; line-height:25px}
 .mytable-02 td, .mytable-03 td{ text-align:center; border-bottom:1px dashed #B78562}
 .mytable-02 .td_motion{ width:300px}
@@ -448,33 +447,35 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    font-size:1em; 
    text-align:right; 
    color:#ad3713}
-.mytable-04 td{
+.mytable-04 td, .mytable-05 td{
 	padding:8px 5px;　
    font-size:.938em; 
    line-height:25px; 
    border-bottom:1px dashed #B78562;
    vertical-align:middle}
-.mytable-04 span{
+.mytable-04 span, .mytable-05 span{
 	font-size:0.938em;
 	padding:3px 15px;
-	background:#DDD7C1/*#D6D0B9*/;
+	background:#DDD7C1;
 	color:#3B3B39;
 	margin-right:15px;
 	-webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border-radius: 8px;}   
-.mytable-04 h5{ 
+    border-radius: 8px}
+.mytable-04 h5, .mytable-05 h5{ 
    font-size:1em; 
    line-height:25px;
    color:#ad3713;
    letter-spacing:1px}
 .mytable-04 ul{ margin:0; padding:0}
 .mytable-04 li{ display:inline-block; width:285px}
-.mytable-04 .tdw-120{ width:120px}
-.mytable-04 .tdw-82{ width:82px}
-.mytable-04 .tdw-97{ width:97px}
-.mytable-04 .tdw-127{ width:127px}
-.mytable-04 .tdw-144{ width:144px}   
+.mytable-05 li{ padding:8px 0}
+.tdw-120{ width:120px}
+.tdw-82{ width:82px}
+.tdw-97{ width:97px}
+.tdw-127{ width:127px}
+.tdw-144{ width:144px} 
+.mytable-05 .mytag{ display:inline-block; width:38px} 
    
 .list_type{
 	display: block;
@@ -629,8 +630,4 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .box_tools{
 	display:block;
 	width:200px;
-	margin:0 auto}	
-
-
-/* 4.列印樣式
-===============================================================================================*/
+	margin:0 auto}
