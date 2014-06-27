@@ -542,7 +542,20 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .news_main{ display:block; padding-top:30px}
 .news_main a:link {text-decoration:none; color:#D6A238; font-weight:bold}
 .news_main a:visited {text-decoration:none; color:#8c8c8c}
-.news_main a:hover {text-decoration:underline; color:#ad3713}		
+.news_main a:hover {text-decoration:underline; color:#ad3713}
+.my-table{
+	width:97%;
+	border:1px solid #333;
+	border-collapse: collapse; 
+	border-spacing: 0;
+	margin-bottom:20px}
+.my-table th{padding:5px 8px; border:1px solid #333}
+.my-table td{
+	padding:5px 8px;
+	font-size:1em;
+	line-height:22px;
+	border:1px solid #333;
+	vertical-align:middle}		
 	
 /* 3.5 影音專區 */
 .time{ 
