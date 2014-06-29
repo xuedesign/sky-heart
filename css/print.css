@@ -99,19 +99,22 @@ image{border:0}
 .box_reglister .number, .box_reglister .name{ display:block; width:50%; font-size:1.125em; padding-top:20px}	
 .box_reglister .number{ float:left;}
 .box_reglister .name{ float:right; text-align:right}
-.box_reglister span, .case-info span{ font-weight:bold; color:#36C; padding:0 10px}
+.box_reglister span, .case-info span, .case-info-02 span{ font-weight:bold; color:#36C; padding:0 10px}
 
-.case-info{
+.case-info, .case-info-02{
 	width:650px;
 	min-height:250px;
-	border:2px double #333333;
-	margin:0 auto}	
-.case-info td, .case-staff td{
+	border:2px double #333333}
+.case-info{ margin:0 auto}
+.case-info-02{margin:0 auto 50px auto}		
+.case-info td, .case-staff td, .case-info-02 td{
 	font-size:1.125em;
 	line-height:30px;
 	padding:10px 8px;
 	border-bottom:1px solid #333}
-.case-info td li{ display:inline; margin-right:50px}
+.case-info td li, .case-info-02 td li{ display:inline}
+.case-info td li{margin-right:50px}
+.case-info-02 td li{ margin-right:20px}
 .case-info .minhigh-01{ display:block; min-height:300px;}
 .case-info .minhigh-02{}
 
