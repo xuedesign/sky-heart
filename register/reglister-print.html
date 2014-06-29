@@ -1,10 +1,140 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>無標題文件</title>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="歡迎光臨社團法人中華彌勒文化天仁堂發展協會，本協會致力於傳統道教文化發揚傳遞，保存古老而美好的普世價值。"/>
+<meta name="Author" content="社團法人中華彌勒文化天仁堂發展協會" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<title>救世掛號系統│社團法人中華彌勒文化天仁堂發展協會</title>
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/print.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="../script/PrintArea.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
+<![endif]-->
 </head>
 
 <body>
+   <div id="wrap">
+      <div id="top_bar">
+         <div id="bar_main">
+             <h1>掛號單列印</h1>
+             <div id="printtool">
+                <input name="input" type="button" id="print_button" value="列印掛號單" class="mybtn btn_green">
+                <input name="input" type="button" onClick="self.close();" value="取消列印" class="mybtn btn_pink">
+             </div>
+         </div>
+      </div>
+      
+      <div id="page_main">
+         <div id="myPrintArea">
+            <div class="box_reglister">
+               <h2>土城天仁堂救世掛號單</h2><!-- span標示範圍為需要帶入的值 -->
+               <p class="number">第<span>009</span>號</p>
+               <p class="name">姓名：<span>王大明</span></p>
+               <br class="clean">
+            </div>
+            <hr>
+            
+            <table class="case-info"><!-- span標示範圍為需要帶入的值 -->
+              <tr>
+                <td>
+                   <ul>
+                   	 <li>第<span>009</span>號</li>
+                   	 <li><span>善男</span></li>
+                   	 <li>姓名：<span>王大明</span></li>
+                   </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   <ul>
+                   	 <li>生肖：<span>豬</span></li>
+                   	 <li>年齡：<span>55</span></li>
+                   </ul> 
+                </td>
+              </tr>
+              <tr>
+                <td>生辰：民國<span>48</span>年農曆<span>十二</span>月<span>初八</span>日<span>酉</span>時</td>
+              </tr>
+              <tr>
+                <td>地址：<span>新北市中和區中正路888巷168弄666號99樓之88</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="minhigh-01"><!-- 需要由程式判斷是否為"初次"或"再次"問事(由是否有過去的問事記錄決定)，預設選項是○，當被選擇時改為● -->
+                	<li><span>○</span>初次</li>
+                    <li><span>●</span>再次</li><br>
+                	<li>求問：<span>購屋風水，地址位於宜蘭縣羅東鎮中正路888巷168弄666號99樓之88，頭節感主票不樂理濟些：的檢多；電層的銷腦一起人研時，木前論福特增不精計要主其裡識我親。快名且少能好一就護座操，論變不相！人影的低兩算戰車。</span></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   <ul>
+                   	<li>電話：<span>(02)77317766#22、0988-888888</span></li>
+                   	<li>介紹人：<span>王小明</span></li>
+                   </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>天運歲次<span>甲午</span>年<span>十一</span>月<span>十五</span>日</td>
+              </tr>
+            </table>
+
+            
+            <table class="case-staff">
+              <tr>
+                <td>神聖聖號：</td>
+                <td>宣講人員：</td>
+                <td>建檔人員：</td>
+              </tr>
+            </table>
+
+            <div class="case-record">
+               <h2>求問事項紀錄</h2>
+               <ul>
+                  <li><!-- 單一則li為一次問答 -->
+                     <h3>民國54年10月8日20時│歲次庚申年二月二十九日戌時</h3>
+                     <h4>【詢問】</h4>
+                     <p>工上對知決認。十真馬！大選源約，使好禮他放緊落我際前頭有和如接一！女思導樣財在吃</p>
+                     <h4>【回應】</h4>
+                     <p>唱靜輕。下生人河片工平賽們裡天有家眼同在頭信著更。有氣非下提就北理作定著元般種聞由英機善，畫如多座我張用。息接類很心唱手全天多之謝成一，金舉新夠要遊眼生音、叫世富地積不進保中想別魚關能，母最人！常裡油得士然歡平國小有這策學電：營還多們在外財正現大變長外西當依也。</p>
+                  </li>
+                  <li>
+                     <h3>民國54年10月8日20時│歲次庚申年二月二十九日戌時</h3>
+                     <h4>【詢問】</h4>
+                     <p>工上對知決認。十真馬！大選源約，使好禮他放緊落我際前頭有和如接一！女思導樣財在吃</p>
+                     <h4>【回應】</h4>
+                     <p>唱靜輕。下生人河片工平賽們裡天有家眼同在頭信著更。有氣非下提就北理作定著元般種聞由英機善，畫如多座我張用。息接類很心唱手全天多之謝成一，金舉新夠要遊眼生音、叫世富地積不進保中想別魚關能，母最人！常裡油得士然歡平國小有這策學電：營還多們在外財正現大變長外西當依也。</p>
+                  </li>
+                  <li>
+                     <h3>民國54年10月8日20時│歲次庚申年二月二十九日戌時</h3>
+                     <h4>【詢問】</h4>
+                     <p>工上對知決認。十真馬！大選源約，使好禮他放緊落我際前頭有和如接一！女思導樣財在吃</p>
+                     <h4>【回應】</h4>
+                     <p>唱靜輕。下生人河片工平賽們裡天有家眼同在頭信著更。有氣非下提就北理作定著元般種聞由英機善，畫如多座我張用。息接類很心唱手全天多之謝成一，金舉新夠要遊眼生音、叫世富地積不進保中想別魚關能，母最人！常裡油得士然歡平國小有這策學電：營還多們在外財正現大變長外西當依也。</p>
+                  </li>
+               </ul>
+            </div>
+         
+         </div><!-- end #myPrintArea //-->
+      </div>
+   </div>
+
+<script>
+  $("#print_button").click(function(){
+  $("#myPrintArea").printArea();
+});
+</script>
 </body>
 </html>
