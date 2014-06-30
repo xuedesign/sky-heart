@@ -65,7 +65,7 @@
               </div>
               
               <article id="page_container">
-              <form action="case-profile.html" method="post">
+              <!--<form action="" method="post">--><!--因為要秀連結效果，所以form先隱藏起來-->
                  <table class="mytable-05">
                     <tr>
                       <td class="tdw-120"><h5>病歷號碼：</h5></td>
@@ -292,11 +292,12 @@
                       <td colspan="5"><input name="input" type="text" class="mytxtarea" value="李大明"></td>
                     </tr>
                   </table>
+                  <!-- 目前會進到病歷編輯頁有兩個路徑，一個是掛號時點擊編輯病歷，一個是病歷查詢時點擊編輯病歷，希望在按下儲存或取消後皆可回到上一頁 -->
                   <div class="box_tools">
-                      <input name="input" type="submit" value="儲存" onClick="javascript:location.href='case-profile.html';" class="mybtn btn_green">
+                      <input name="input" type="submit" value="儲存" onClick="javascript:history.back(-1);" class="mybtn btn_green">
                       <input name="input" type="button" value="取消" onclick="javascript:history.back(-1);" class="mybtn btn_pink">
                   </div>
-              </form>
+              <!--</form>-->
               </article>
               
               
