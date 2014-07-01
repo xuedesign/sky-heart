@@ -31,7 +31,7 @@
   <div id="wrap">
         <header>
            <div class="top_bar">
-              <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年4月17日</div>
+              <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年四月十七日</div>
               <div class="top_right">
                  Elmo,歡迎回來<input name="登出" type="submit" onclick="javascript:location.href='login.html';" value="登出" class="btn_logout">
               </div>
@@ -49,8 +49,8 @@
                 <!-- InstanceBeginEditable name="nav" -->
                 <ul class="navigation"><!-- 在該單元時，選單的class要增加navin 做標示 -->
                   <li><a href="reglister-list.html" title="掛號" class="nav_01">掛號</a></li>
-                  <li><a href="case-search.html" title="病歷查詢" class="nav_02 navin">病歷查詢</a></li>
-                  <li><a href="case-new.html" title="新增病歷" class="nav_03">新增病歷</a></li>
+                  <li><a href="case-search.html" title="求問者查詢" class="nav_02 navin">求問者查詢</a></li>
+                  <li><a href="case-new.html" title="新增求問者" class="nav_03">新增求問者</a></li>
                 </ul>
                 <!-- InstanceEndEditable -->
             </nav>
@@ -60,7 +60,7 @@
             <!-- InstanceBeginEditable name="page_main" -->
             <div id="page_main">
               <div class="bar_title bg_title-inside">
-                <h3>編輯病歷</h3>
+                <h3>編輯求問者資料</h3>
                 <br class="clean">
               </div>
               
@@ -68,8 +68,8 @@
               <!--<form action="" method="post">--><!--因為要秀連結效果，所以form先隱藏起來-->
                  <table class="mytable-05">
                     <tr>
-                      <td class="tdw-120"><h5>病歷號碼：</h5></td>
-                      <td colspan="5"><input name="input" type="text" class="mytxtarea w250" value="0000457"></td>
+                      <td class="tdw-120"><h5>會員編號：</h5></td>
+                      <td colspan="5">0000457</td>
                     </tr>
                     <tr>
                       <td><h5>姓　　名：</h5></td>
@@ -88,162 +88,20 @@
                     <tr>
                       <td><h5>出生日期：</h5></td>
                       <td colspan="5">
-                      <ul>
-                        <li>
-                        <span>國曆</span>
-                         <select name="" class="mytxtarea-03 w80">
-                           <option selected>民國</option>
-                           <option>民國前</option>
-                         </select>
-                        <input name="year" type="text" class="mytxtarea w80" value="65">年
-                        <select name="month" class="mytxtarea-03 w80">
-                           <option>請選擇</option>
-                           <option>1</option>
-                           <option>2</option>
-                           <option>3</option>
-                           <option>4</option>
-                           <option>5</option>
-                           <option>6</option>
-                           <option>7</option>
-                           <option>8</option>
-                           <option>9</option>
-                           <option>10</option>
-                           <option selected>11</option>
-                           <option>12</option>
-                         </select>月
-                         <select name="day" class="mytxtarea-03 w80">
-                           <option>請選擇</option>
-                           <option>1</option>
-                           <option>2</option>
-                           <option>3</option>
-                           <option>4</option>
-                           <option>5</option>
-                           <option>6</option>
-                           <option>7</option>
-                           <option>8</option>
-                           <option>9</option>
-                           <option>10</option>
-                           <option>11</option>
-                           <option>12</option>
-                           <option>13</option>
-                           <option>14</option>
-                           <option>15</option>
-                           <option>16</option>
-                           <option>17</option>
-                           <option>18</option>
-                           <option>19</option>
-                           <option>20</option>
-                           <option>21</option>
-                           <option>22</option>
-                           <option>23</option>
-                           <option>24</option>
-                           <option>25</option>
-                           <option>26</option>
-                           <option>27</option>
-                           <option>28</option>
-                           <option>29</option>
-                           <option selected>30</option>
-                           <option>31</option>
-                         </select>日
-                         <select name="hour" class="mytxtarea-03 w80">
-                           <option>請選擇</option>
-                           <option>1</option>
-                           <option>2</option>
-                           <option>3</option>
-                           <option>4</option>
-                           <option>5</option>
-                           <option>6</option>
-                           <option>7</option>
-                           <option>8</option>
-                           <option>9</option>
-                           <option>10</option>
-                           <option>11</option>
-                           <option>12</option>
-                           <option>13</option>
-                           <option>14</option>
-                           <option>15</option>
-                           <option>16</option>
-                           <option>17</option>
-                           <option>18</option>
-                           <option>19</option>
-                           <option selected>20</option>
-                           <option>21</option>
-                           <option>22</option>
-                           <option>23</option>
-                           <option>24</option>
-                         </select>時</li>
-                         
-                        <li><span>農曆</span>
-                        歲次 <input name="" type="text" class="mytxtarea w80" value="庚申">年 
-                        <select name="month" class="mytxtarea-03 w80">
-                           <option>請選擇</option>
-                           <option>一</option>
-                           <option selected>二</option>
-                           <option>三</option>
-                           <option>四</option>
-                           <option>五</option>
-                           <option>六</option>
-                           <option>七</option>
-                           <option>八</option>
-                           <option>九</option>
-                           <option>十</option>
-                           <option>十一</option>
-                           <option>十二</option>
-                         </select>月 
-                         <select name="month" class="mytxtarea-03 w80">
-                           <option>請選擇</option>
-                           <option>一</option>
-                           <option>二</option>
-                           <option>三</option>
-                           <option>四</option>
-                           <option>五</option>
-                           <option>六</option>
-                           <option>七</option>
-                           <option>八</option>
-                           <option>九</option>
-                           <option>十</option>
-                           <option>十一</option>
-                           <option>十二</option>
-                           <option>十三</option>
-                           <option>十四</option>
-                           <option>十五</option>
-                           <option>十六</option>
-                           <option>十七</option>
-                           <option>十八</option>
-                           <option>十九</option>
-                           <option>二十</option>
-                           <option>廿一</option>
-                           <option>廿二</option>
-                           <option>廿三</option>
-                           <option>廿四</option>
-                           <option>廿五</option>
-                           <option>廿六</option>
-                           <option>廿七</option>
-                           <option>廿八</option>
-                           <option selected>廿九</option>
-                           <option>三十</option>
-                         </select>日 
-                         <select name="hour" class="mytxtarea-03 w80">
-                           <option>請選擇</option>
-                           <option>子</option>
-                           <option selected>丑</option>
-                           <option>寅</option>
-                           <option>卯</option>
-                           <option>辰</option>
-                           <option>巳</option>
-                           <option>午</option>
-                           <option>未</option>
-                           <option>申</option>
-                           <option>酉</option>
-                           <option>戌</option>
-                           <option>亥</option>
-                         </select>時</li>
-                         </ul>
+                          <select name="" class="mytxtarea-03 w80">
+                               <option selected>民國</option>
+                               <option>民國前</option>
+                          </select>
+                          <input name="year" type="text" class="mytxtarea w80" value="65"> 年
+                          <input name="month" type="text" class="mytxtarea w80" value="11"> 月
+                          <input name="day" type="text" class="mytxtarea w80" value="18"> 日
+                          <input name="hour" type="text" class="mytxtarea w80" value="20"> 時
+                          <!-- 生日改為全部文字框，讓管理者可以填入國曆生日或農曆生日 -->
                       </td>
                     </tr>
                     <tr>
                       <td><h5>年　　齡：</h5></td>
-                      <td>45</td>
+                      <td><input name="age" type="text" class="mytxtarea w80" value="45"></td><!-- 年齡也是自己填入，每到1月1日數值自動加1 -->
                       <td><h5>生　肖：</h5></td>
                       <td colspan="3">
                           <select name="month" class="mytxtarea-03 w80">

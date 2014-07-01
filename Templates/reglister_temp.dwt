@@ -31,7 +31,7 @@
   <div id="wrap">
         <header>
            <div class="top_bar">
-              <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年4月17日</div>
+              <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年四月十七日</div>
               <div class="top_right">
                  Elmo,歡迎回來<input name="登出" type="submit" onclick="javascript:location.href='login.html';" value="登出" class="btn_logout">
               </div>

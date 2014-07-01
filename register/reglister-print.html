@@ -29,6 +29,7 @@
          <div id="bar_main">
              <h1>掛號單列印</h1>
              <div id="printtool">
+                <!-- 按下列印掛號單按鈕時，甫完成掛號手續，前台掛號列表新添資料及列印掛號單出來 -->
                 <input name="input" type="button" id="print_button" value="列印掛號單" class="mybtn btn_green">
                 <input name="input" type="button" onClick="self.close();" value="取消列印" class="mybtn btn_pink">
              </div>
@@ -64,14 +65,14 @@
                 </td>
               </tr>
               <tr>
-                <td>生辰：民國<span>48</span>年農曆<span>十二</span>月<span>初八</span>日<span>酉</span>時</td>
+                <td>生辰：民國<span>48</span>年<span>十二</span>月<span>初八</span>日<span>酉</span>時</td>
               </tr>
               <tr>
                 <td>地址：<span>新北市中和區中正路888巷168弄666號99樓之88</span></td>
               </tr>
               <tr>
                 <td>
-                  <ul><!-- 需要由程式判斷是否為"初次"或"再次"問事(由是否有過去的問事記錄決定)，預設選項是○，當被選擇時改為● -->
+                  <ul class="minhigh-01"><!-- 需要由程式判斷是否為"初次"或"再次"問事(由是否有過去的問事記錄決定)，預設選項是○，當被選擇時改為● -->
                 	<li><span>○</span>初次</li>
                     <li><span>●</span>再次</li><br>
                 	<li>求問：<span>購屋風水，地址位於宜蘭縣羅東鎮中正路888巷168弄666號99樓之88，頭節感主票不樂理濟些：的檢多；電層的銷腦一起人研時，木前論福特增不精計要主其裡識我親。快名且少能好一就護座操，論變不相！人影的低兩算戰車。</span></li>
@@ -87,7 +88,7 @@
                 </td>
               </tr>
               <tr>
-                <td>天運歲次<span>甲午</span>年<span>十一</span>月<span>十五</span>日</td>
+                <td>民國<span>103</span>年<span>10</span>月<span>10</span>日 / 天運歲次<span>甲午</span>年<span>十一</span>月<span>十五</span>日</td>
               </tr>
             </table>
 
@@ -101,7 +102,7 @@
             </table>
 
             <div class="case-record">
-               <h2>診斷紀錄</h2>
+               <h2>聖示紀錄</h2>
                
             </div>
          
