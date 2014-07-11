@@ -64,6 +64,9 @@
                 <br class="clean">
               </div>
               
+               <script>
+                 $(function(){$(".calendar-02").hide();$(".chk2").click(function(){var a=$(this).val();1==a?$(".calendar-01").fadeIn():$(".calendar-01").hide();2==a?$(".calendar-02").fadeIn():$(".calendar-02").hide()})});
+              </script>
               <article id="page_container">
               <!--<form action="" method="post">--><!--因為要秀連結效果，所以form先隱藏起來-->
                  <table class="mytable-05">
@@ -93,14 +96,153 @@
                                <option>民國前</option>
                           </select>
                           <input name="year" type="text" class="mytxtarea w80" value="65"> 年
-                          <select name="calendar" class="mytxtarea-03 w80">
-                               <option selected>國曆</option>
-                               <option>農曆</option>
-                          </select>
-                          <input name="month" type="text" class="mytxtarea w80" value="11"> 月
-                          <input name="day" type="text" class="mytxtarea w80" value="18"> 日
-                          <input name="hour" type="text" class="mytxtarea w80" value="20"> 時
-                          <!-- 生日改為全部文字框，讓管理者可以填入國曆生日或農曆生日 -->
+                          
+                          <input name="radio" type="radio" id="calendar-01" value="1" checked="checked" class="chk2">國曆
+                          <input type="radio" name="radio" id="calendar-02" value="2" class="chk2">農曆
+                          <div class="box_calendar calendar-01">
+                          <select name="month" class="mytxtarea-03 w80">
+                               <option>請選擇</option>
+                               <option>1</option>
+                               <option>2</option>
+                               <option>3</option>
+                               <option selected>4</option>
+                               <option>5</option>
+                               <option>6</option>
+                               <option>7</option>
+                               <option>8</option>
+                               <option>9</option>
+                               <option>10</option>
+                               <option>11</option>
+                               <option>12</option>
+                             </select>月
+                             <select name="day" class="mytxtarea-03 w80">
+                               <option>請選擇</option>
+                               <option>1</option>
+                               <option>2</option>
+                               <option>3</option>
+                               <option>4</option>
+                               <option>5</option>
+                               <option>6</option>
+                               <option>7</option>
+                               <option>8</option>
+                               <option>9</option>
+                               <option>10</option>
+                               <option>11</option>
+                               <option>12</option>
+                               <option>13</option>
+                               <option selected>14</option>
+                               <option>15</option>
+                               <option>16</option>
+                               <option>17</option>
+                               <option>18</option>
+                               <option>19</option>
+                               <option>20</option>
+                               <option>21</option>
+                               <option>22</option>
+                               <option>23</option>
+                               <option>24</option>
+                               <option>25</option>
+                               <option>26</option>
+                               <option>27</option>
+                               <option>28</option>
+                               <option>29</option>
+                               <option>30</option>
+                               <option>31</option>
+                             </select>日
+                             <select name="hour" class="mytxtarea-03 w80">
+                               <option>請選擇</option>
+                               <option>1</option>
+                               <option>2</option>
+                               <option>3</option>
+                               <option>4</option>
+                               <option>5</option>
+                               <option>6</option>
+                               <option>7</option>
+                               <option>8</option>
+                               <option selected>9</option>
+                               <option>10</option>
+                               <option>11</option>
+                               <option>12</option>
+                               <option>13</option>
+                               <option>14</option>
+                               <option>15</option>
+                               <option>16</option>
+                               <option>17</option>
+                               <option>18</option>
+                               <option>19</option>
+                               <option>20</option>
+                               <option>21</option>
+                               <option>22</option>
+                               <option>23</option>
+                               <option>24</option>
+                              </select>時
+                          </div>
+                          
+                          <div class="box_calendar calendar-02">
+                              <select name="month" class="mytxtarea-03 w80">
+                               <option selected>請選擇</option>
+                               <option>一</option>
+                               <option>二</option>
+                               <option>三</option>
+                               <option>四</option>
+                               <option>五</option>
+                               <option>六</option>
+                               <option>七</option>
+                               <option>八</option>
+                               <option>九</option>
+                               <option>十</option>
+                               <option>十一</option>
+                               <option>十二</option>
+                             </select>月 
+                             <select name="month" class="mytxtarea-03 w80">
+                               <option selected>請選擇</option>
+                               <option>一</option>
+                               <option>二</option>
+                               <option>三</option>
+                               <option>四</option>
+                               <option>五</option>
+                               <option>六</option>
+                               <option>七</option>
+                               <option>八</option>
+                               <option>九</option>
+                               <option>十</option>
+                               <option>十一</option>
+                               <option>十二</option>
+                               <option>十三</option>
+                               <option>十四</option>
+                               <option>十五</option>
+                               <option>十六</option>
+                               <option>十七</option>
+                               <option>十八</option>
+                               <option>十九</option>
+                               <option>二十</option>
+                               <option>廿一</option>
+                               <option>廿二</option>
+                               <option>廿三</option>
+                               <option>廿四</option>
+                               <option>廿五</option>
+                               <option>廿六</option>
+                               <option>廿七</option>
+                               <option>廿八</option>
+                               <option>廿九</option>
+                               <option>三十</option>
+                             </select>日
+                             <select name="hour" class="mytxtarea-03 w80">
+                               <option selected>請選擇</option>
+                               <option>子</option>
+                               <option>丑</option>
+                               <option>寅</option>
+                               <option>卯</option>
+                               <option>辰</option>
+                               <option>巳</option>
+                               <option>午</option>
+                               <option>未</option>
+                               <option>申</option>
+                               <option>酉</option>
+                               <option>戌</option>
+                               <option>亥</option>
+                             </select>時
+                          </div>   
                       </td>
                     </tr>
                     <tr>
