@@ -115,7 +115,7 @@ image{border:0}
 .case-info td li, .case-info-02 td li{ display:inline}
 .case-info td li{margin-right:50px}
 .case-info-02 td li{ margin-right:20px}
-.case-info .minhigh-01{ display:block; min-height:150px}
+.case-info .minhigh-01{ display:block; min-height:100px}
 .case-info .minhigh-01 li{ margin-right:10px}
 
 .case-staff{
@@ -125,7 +125,7 @@ image{border:0}
 .case-record{
 	display:block;
 	width:620px;
-	min-height:300px;
+	min-height:350px;
 	border:2px double #333333;
 	margin:0 auto;
 	padding:15px}
