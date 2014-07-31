@@ -143,10 +143,10 @@ header{ display:block; width:100%}
 .top_banner h1 a{
 	display:block;
 	position:absolute;
-	top:68px;
-	left:108px;
-	width:428px;
-	height:170px;
+	top:30px;
+	left:12px;
+	width:599px;
+	height:204px;
 	background:url(../images/bg_h1.png) no-repeat;
 	text-indent:-9999px}
 	
