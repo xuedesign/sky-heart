@@ -352,16 +352,20 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 .myphoto ul{ padding:20px 0}
 .myphoto li{
 	display:block;
-	width:150px;
+	/*width:150px;*/
+	width:175px;
 	float:left;
-	margin:0 28px 15px}
+	margin:0 15px 15px;
+	text-align:center}
 .myphoto .box_photo{ 
    display:block; 
-   width:144px; 
-   height:144px; 
+   /*width:144px; 
+   height:144px;*/
+   width:175px;
+   height:133px; 
    border:3px solid #FFF; 
    overflow:hidden}
-.myphoto .box_photo img{ width:144px}
+.myphoto .box_photo img{ width:175px}
 .myphoto time, .box_list time{
 	display:block; 
 	font-size:1em;
@@ -369,7 +373,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	text-align:center;
 	color:#a95823;
 	letter-spacing:1px}
-.myphoto time{width:148px}	
+.myphoto time{ width:175px;/*width:148px*/}	
 .myphoto p, .box_list p{font-size:1em; line-height:22px}
 .myphoto p{ 
    display:block; 
@@ -588,13 +592,13 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	width:180px;
 	margin:0 11px 30px}
 .box_list .box_photo02{
-	display:block;
+	display: block;
 	width:175px;
-	height:133px;
-	padding:5px 0 0 5px;
+	height:128px;
+	padding:5px;
 	background:#FFF;
 	overflow:hidden}
-.box_list img{ width:170px; height:128px}
+.box_list img{ width:175px; height:128px}
 .box_list time{ width:180px}
 .box_list p{ 
    display:block; 
