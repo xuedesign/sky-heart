@@ -357,15 +357,21 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	float:left;
 	margin:0 15px 15px;
 	text-align:center}
-.myphoto .box_photo{ 
-   display:block; 
-   /*width:144px; 
-   height:144px;*/
+.myphoto .box_photo{
+	display: block;
+	width:175px;
+	height:128px;
+	padding:5px;
+	background:#FFF;
+	overflow:hidden 
+   /*display:block; 
+   width:144px; 
+   height:144px;
    width:175px;
    height:133px; 
    border:3px solid #FFF; 
-   overflow:hidden}
-.myphoto .box_photo img{ width:175px}
+   overflow:hidden*/}
+.myphoto .box_photo img{ width:175px; height:128px}
 .myphoto time, .box_list time{
 	display:block; 
 	font-size:1em;
