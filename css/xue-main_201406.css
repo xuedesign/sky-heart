@@ -425,7 +425,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	width:300px;
 	height:225px;
 	overflow:hidden}		
-.playlist img{ width:330px; height:auto}	 
+.playlist img{ width:330px; height:248px /*height:auto*/}	 
 .playlist time{ font-size:0.813em; line-height:22px; padding:15px 0; color:#a44e15} 
 .playlist h4{ font-size:1em; line-height:25px; color:#000; padding-bottom:10px}
 .playlist-02 h5{
