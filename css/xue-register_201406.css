@@ -575,8 +575,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	width:30%;
 	text-align:right}
 .record_note{ display:block; width:1000px; padding-top:10px}
-.record_note h5{
-	width:35px;
+.record_note h5, .record_staff h5{
 	margin-bottom:5px;
 	padding:2px 15px;
 	font-size:1em;
@@ -585,12 +584,19 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;}
+.record_note h5{width:35px}
 .record_note p{
 	font-size:0.938em;
 	line-height:25px;
 	padding-bottom:15px}
 .record_note .ti-q{ background:#ECB8B3}
-.record_note .ti-a{ background:#A9E7A1}	
+.record_note .ti-a{ background:#A9E7A1}
+.record_note .ti-st{ background:#DDD7C1}
+
+.record_staff{ display:block; padding-bottom:30px; text-align:right}
+.record_staff h5, .record_staff p{ float:left}
+.record_staff h5{ width:65px}
+.record_staff p{padding:0 30px 0 10px}		
 
 /*頁碼*/
 .digg { padding: 3px; margin:15px 0 0 0; text-align: center}
