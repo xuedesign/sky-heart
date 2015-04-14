@@ -196,22 +196,29 @@ header{ display:block; width:100%}
 	margin:0 5px}
 .btn_logout:hover{color:#2c2c2c; text-decoration:none; background: #fffc00}
 		 
-.top_banner{ 
+.top_banner, .top_mybanner{ 
    clear:both; 
    display:block;
    position:relative; 
-   width:1276px; 
-   height:248px;
-   background:url(../images/bg_banner.jpg) no-repeat} 
-.top_banner h1 a{
+   width:1276px}
+.top_banner{height:248px; background:url(../images/bg_banner.jpg) no-repeat}
+.top_mybanner{ height:145px; background:url(../images/bg_mybanner.jpg) no-repeat}    
+.top_banner h1 a, .top_mybanner h1 a{
 	display:block;
 	position:absolute;
+	text-indent:-9999px}
+.top_banner h1 a{
 	top:30px;
 	left:12px;
 	width:599px;
 	height:204px;
-	background:url(../images/bg_h1.png) no-repeat;
-	text-indent:-9999px}
+	background:url(../images/bg_h1.png) no-repeat}	
+.top_mybanner h1 a{
+	top:15px;
+	left:60px;
+	width:375px;
+	height:109px;
+	background:url(../images/bg_myh1.png) no-repeat}	
 	
 /* 2-2. 網站主選單 */
 nav{ display:block; width:414px; margin:0 auto}
@@ -253,14 +260,18 @@ nav h3{ display:none}
 
    
 /* 2-3. 版權列 */ 
-footer{
+footer, #myfooter{
    display:block;
    position:relative;
-   width:100%;
+   width:100%}
+footer{
    height:143px;
-   background:url(../images/bg_footer.png) repeat-x;
-   padding-top:40px}
-footer p{
+   padding-top:40px;
+   background:url(../images/bg_footer.png) repeat-x}
+#myfooter{
+	height:48px;
+	background: url(../images/bg_myfooter.jpg) no-repeat}     
+footer p, #myfooter p{
 	text-align:center;
 	font-size:0.938em;
 	line-height:25px;
@@ -394,7 +405,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 #page_main{
 	display:block;
 	width:1148px;
-	margin:20px 0}
+	margin:20px 0}	
 .box_search{
 	display:block;
 	position:relative;
@@ -643,4 +654,79 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	display:block;
 	width:200px;
 	margin:0 auto}
-.box_calendar{ display:inline; padding-left:10px}	
+.box_calendar{ display:inline; padding-left:10px}
+
+/*2015-04-14 新增*/
+#mypage_main{
+	display:block;
+	width:1148px;
+	margin:20px 0 0}
+#my_slidelist{
+	display:block;
+	width:1068px;
+	padding:0 40px}
+/*.three-column{
+	-moz-column-count:3;
+    -moz-column-gap:0;
+    -webkit-column-count:3;
+    -webkit-column-gap:0;
+    column-count:3;
+    column-gap:0}*/
+.my_column{
+	display:block;
+	float:left}		
+#my_slidelist ul{ /*height:912px;*/ margin:0; padding:0}
+#my_slidelist li{
+	display:block;
+	width:322px;
+	margin:0 17px;
+	padding:8px 0;
+	border-bottom:1px dashed #cec8b1}
+#my_slidelist .my_number, #my_slidelist .my_name, #my_slidelist .my_sex{ display:block; float:left} 	
+#my_slidelist .my_number{
+	width:40px;
+	height:40px;
+	border-radius:99em;
+	background-color:#613832;
+	font-size:1.25em;
+	text-align:center;
+	line-height:40px;
+	color:#f3eccf;
+	margin-bottom:8px}
+#my_slidelist .my_name{
+	width:150px;
+	font-size:1.750em;
+	color:#393939;
+	line-height:40px;
+	padding-left:30px}
+#my_slidelist .my_sex{
+	width:102px;
+	font-size:1.750em;
+	color:#393939;
+	line-height:40px}
+.box_mybtn{
+	display:block;
+	position:absolute;
+	top:12px;
+	right:60px}	
+.box_mybtn a{
+	padding:5px 15px;
+	font-size:.938em;
+	line-height:25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#fff; 
+	text-decoration:none; 
+	background:#ad3713;
+	-webkit-box-shadow: 2px 2px 0 #78402C;
+	-moz-box-shadow: 2px 2px 0 #78402C;
+	box-shadow: 2px 2px 0 #78402C}
+.box_mybtn a:hover{ 
+    color:#2c2c2c; 
+	text-decoration:none; 
+	background: #fffc00;
+	-webkit-box-shadow: -2px -2px 0 #CDCB00;
+	-moz-box-shadow: -2px -2px 0 #CDCB00;
+	box-shadow: -2px -2px 0 #CDCB00}					
+	
