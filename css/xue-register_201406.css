@@ -228,13 +228,15 @@ nav h3{ display:none}
 	display: block; 
 	width:138px; 
 	height:49px}
-.nav_01, .nav_02, .nav_03{ text-indent:-9999px; background: url(../images/btn_nav-01.png) no-repeat}	
+.nav_01, .nav_02, .nav_03, .nav_01.nav_disable, .nav_03.nav_disable{ text-indent:-9999px; background: url(../images/btn_nav-01.png) no-repeat}	
 .nav_01{ background-position: 0 0} 
 .nav_01:hover, .nav_01.navin{ background-position: 0 -49px}
+.nav_01.disable{ background-position: 0 -98px}
 .nav_02{ background-position: -138px 0}
 .nav_02:hover, .nav_02.navin{ background-position: -138px -49px}
 .nav_03{ background-position: -276px 0}
 .nav_03:hover, .nav_03.navin{ background-position: -276px -49px}
+.nav_03.disable{ background-position: -276px -98px}
 .navigation ul{
 	display: none;
 	float: left;
@@ -401,6 +403,15 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	font-weight:normal;
 	color:#FFF;
 	letter-spacing:1px}
+.bar_title a.btn_send{
+	position:absolute;
+	top:10px;
+	left:190px;
+	width:35px;
+	font-size:1em;
+	letter-spacing:1px;
+	color:#FFF}
+.bar_title a.btn_send:hover{color:#2c2c2c}		
 
 #page_main{
 	display:block;
