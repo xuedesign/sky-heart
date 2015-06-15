@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><!-- InstanceBegin template="/Templates/event_temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="歡迎光臨社團法人中華彌勒文化天仁堂發展協會，本協會致力於傳統道教文化發揚傳遞，保存古老而美好的普世價值。"/>
+<meta name="Author" content="社團法人中華彌勒文化天仁堂發展協會" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>活動報名系統│社團法人中華彌勒文化天仁堂發展協會</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/xue-event_201506.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <div id="wrap">
+        <header>
+           <div class="top_bar">
+              <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年四月十七日</div>
+              <div class="top_right">
+                 Elmo,歡迎回來<input name="登出" type="submit" onclick="javascript:location.href='login.html';" value="登出" class="btn_logout">
+              </div>
+           </div>
+           
+           <section class="top_banner">
+              <h1><a href="../index.html" title="回首頁">社團法人中華彌勒文化天仁堂發展協會</a></h1>
+           </section>
+         </header>
+         
+        
+        <section id="contenter">
+            <!-- InstanceBeginEditable name="page_main" -->
+            <div id="page_main">
+              
+              <div class="bar_title bg_title-inside">
+                  <h3>乙未年天仁堂中元普渡活動報名 
+                      <a href="event-edit.html" title="活動編輯" class="btn_edit">活動編輯</a><!-- 在純檢視權限下此按鈕隱藏 -->
+                  </h3>
+                  <div class="bar_tools">
+                    <input name="input" type="button" value="新增報名" onClick="javascript:location.href='register-search.html';" class="mybtn btn_blue"><!-- 在純檢視權限下此按鈕隱藏 -->
+                    <input name="input" type="button" value="列印名冊" onclick="window.open('print-group.html','print')" class="mybtn btn_pink">
+                    <input name="input" type="button" value="返回列表" onclick="javascript:location.href='event-list.html';" class="mybtn btn_naturals">
+                  </div>
+              </div>
+              
+              <article id="page_container">
+                 <!-- 會員與單位的報名統計是分開的 -->
+                 <table width="100%" summary="報名統計" class="tab_total">
+                  <tr>
+                    <th>報名區間</th>
+                    <td colspan="5"><span>104-07-01 ~ 104-07-31</span></td>
+                  </tr>
+                  <tr>
+                    <th>總單位數</th>
+                    <td width="233"><span>999</span> 座</td>
+                    <th>總金額</th>
+                    <td width="233"><span>999,999,999</span> 元</td>
+                    <th>總貢品數</th>
+                    <td width="234"><span>999</span> 份</td>
+                  </tr>
+                </table>
+              
+                <div class="bar_subtitle">
+                   <h4>【報名單位名單】</h4>
+                   <ul class="list_type02"><!-- 在該檢視狀態時，選單的class要增加listin 做標示 -->
+                       <li class="list_head"><a href="event-info-member.html" title="會員">會員</a></li>
+                       <li class="list_foot"><a href="event-info-group.html" title="單位" class="listin">單位</a></li>
+                   </ul>
+                </div>
+                <div class="box_search2">
+                   <form action="#" method="post">
+                      <input name="input" type="text" class="mytxtarea w250" placeholder="搜尋項目：單位名稱、負責人、金額、貢品、實物捐獻">
+                      <input name="send" type="submit" value="搜尋" class="mybtn btn_mi">
+                   </form>   
+                </div>
+                
+                <table summary="會員報名列表" class="mytable-02 table-set clean">
+                  <tr>
+                    <th><a href="#">編號<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
+                    <th width="15%">單位名稱</th>
+                    <th width="8%">負責人</th>
+                    <th><a href="#">金額<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
+                    <th width="8%"><a href="#">貢品<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
+                    <th>實物捐獻</th>
+                    <th width="10%">認桌數</th>
+                    <th>備註</th>
+                    <th width="30%">功能</th>
+                  </tr>
+                  <tr>
+                    <td>001</td>
+                    <td>松山慈惠堂</td>
+                    <td>王大年</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.5</td>
+                    <td>-</td>
+                    <td><!-- 在純檢視權限下僅保留"單位資料"及"捐獻明細"按鈕，"取消報名"按鈕隱藏 -->
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>松山奉天宮</td>
+                    <td>孫大千</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.5</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>內湖碧山巖</td>
+                    <td>李大華</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>004</td>
+                    <td>桃園南天宮</td>
+                    <td>陳大明</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.3</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>005</td>
+                    <td>獅頭山勸化堂</td>
+                    <td>吳大順</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.3</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>006</td>
+                    <td>白沙屯拱天宮</td>
+                    <td>趙大平</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.3</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>007</td>
+                    <td>五指山灶君堂</td>
+                    <td>錢大元</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.3</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>008</td>
+                    <td>無極三清總道院</td>
+                    <td>蔡大英</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>009</td>
+                    <td>彰化文德宮</td>
+                    <td>洪大柱</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.5</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                  <tr>
+                    <td>010</td>
+                    <td>斗六南聖宮</td>
+                    <td>柯大哲</td>
+                    <td>5000</td>
+                    <td>2</td>
+                    <td>白米一包</td>
+                    <td>0.5</td>
+                    <td>-</td>
+                    <td>
+                      <input name="input" type="button" value="單位資料" onClick="javascript:location.href='edit-group.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
+                      <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
+                  </tr>
+                </table>
+                
+                <!-- 頁碼 -->
+                <div class="digg"> <span class="disabled">&lt;</span> <span class="current">1</span> <a href="#?page=2">2</a> <a href="#?page=3">3</a> <a href="#?page=4">4</a> <a href="#?page=5">5</a> <a href="#?page=6">6</a> <a href="#?page=7">7</a> <a href="#?page=2">&gt;</a> </div>
+                <br class="clean">
+              </article>
+              
+              
+            </div><!-- end #page_main //-->
+            <!-- InstanceEndEditable -->
+        </section>
+       
+        <footer>
+           <p>社團法人中華彌勒文化天仁堂發展協會&nbsp;&nbsp;&nbsp;統一編號：09805611&nbsp;&nbsp;&nbsp;聯絡電話：(02)2267-2072、22672073<br>
+地址:新北市土城區龍泉路35號  <a href="../content/contact.html" title="交通資訊" class="maplink">交通資訊</a></p>
+            <p>社團法人中華彌勒文化天仁堂發展協會&copy;版權所有<br>
+本網站全部圖文係版權所有非經同意不得將全部或部分內容，轉載於任何形式媒體</p>
+            <a href="../register/login.html" title="管理人員登入" class="btn_go to_register">管理人員登入</a>
+            <p class="hidden">製作團隊：版面設計/Ethan Lin  網頁前端/開始設計工作室 Elmo  網站程式/玩人創意設計 YHJ</p>
+        </footer>   
+  </div><!--// end #wrap -->    
+ 
+<script src="../script/web_set.js"></script>
+</body>
+<!-- InstanceEnd --></html>

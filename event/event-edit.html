@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><!-- InstanceBegin template="/Templates/event_temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="歡迎光臨社團法人中華彌勒文化天仁堂發展協會，本協會致力於傳統道教文化發揚傳遞，保存古老而美好的普世價值。"/>
+<meta name="Author" content="社團法人中華彌勒文化天仁堂發展協會" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>活動報名系統│社團法人中華彌勒文化天仁堂發展協會</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/xue-event_201506.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <div id="wrap">
+        <header>
+           <div class="top_bar">
+              <div class="top_left">您好~今天是國曆103年05月23日 / 農曆甲午年四月十七日</div>
+              <div class="top_right">
+                 Elmo,歡迎回來<input name="登出" type="submit" onclick="javascript:location.href='login.html';" value="登出" class="btn_logout">
+              </div>
+           </div>
+           
+           <section class="top_banner">
+              <h1><a href="../index.html" title="回首頁">社團法人中華彌勒文化天仁堂發展協會</a></h1>
+           </section>
+         </header>
+         
+        
+        <section id="contenter">
+            <!-- InstanceBeginEditable name="page_main" -->
+            <div id="page_main">
+              
+              <div class="bar_title bg_title-inside">
+                  <h3>編輯活動主題</h3>
+                  <div class="bar_tools">
+                    <input name="input" type="button" value="刪除活動" class="mybtn btn_pink" onClick="javascript:location.href='event-list.html';">
+                  </div>
+              </div>
+              
+              <article id="page_container">
+                 <form action="event-list.html" method="post">
+                     <table class="mytable-05">
+                        <tr>
+                          <td><h5>活動名稱：</h5></td>
+                          <td><input name="input" type="text" class="mytxtarea-03 w500" value="乙未年天仁堂中元普渡活動報名"></td>
+                        </tr>
+                        <tr>
+                          <td class="tdw-120"><h5>活動類別：</h5></td>
+                          <td>
+                             <select name="event-type" class="mytxtarea-03 w180">
+                                 <option>請選擇一項類別</option>
+                                 <option>謝太歲</option>
+                                 <option>安太歲</option>
+                                 <option>補春運</option>
+                                 <option selected>中元普渡</option>
+                             </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><h5>報名區間：</h5></td>
+                          <td>
+                            民國 <input name="year" type="text" class="mytxtarea w80" value="104">年
+                              <select name="month" class="mytxtarea-03 w80">
+                                 <option>請選擇</option>
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option selected>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                                 <option>11</option>
+                                 <option>12</option>
+                               </select>月
+                               <select name="day" class="mytxtarea-03 w80">
+                                 <option>請選擇</option>
+                                 <option selected>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                                 <option>11</option>
+                                 <option>12</option>
+                                 <option>13</option>
+                                 <option>14</option>
+                                 <option>15</option>
+                                 <option>16</option>
+                                 <option>17</option>
+                                 <option>18</option>
+                                 <option>19</option>
+                                 <option>20</option>
+                                 <option>21</option>
+                                 <option>22</option>
+                                 <option>23</option>
+                                 <option>24</option>
+                                 <option>25</option>
+                                 <option>26</option>
+                                 <option>27</option>
+                                 <option>28</option>
+                                 <option>29</option>
+                                 <option>30</option>
+                                 <option>31</option>
+                               </select>日起 ～
+                             
+                             民國 <input name="year" type="text" class="mytxtarea w80" value="104">年
+                              <select name="month" class="mytxtarea-03 w80">
+                                 <option>請選擇</option>
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option selected>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                                 <option>11</option>
+                                 <option>12</option>
+                               </select>月
+                               <select name="day" class="mytxtarea-03 w80">
+                                 <option>請選擇</option>
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                                 <option>11</option>
+                                 <option>12</option>
+                                 <option>13</option>
+                                 <option>14</option>
+                                 <option>15</option>
+                                 <option>16</option>
+                                 <option>17</option>
+                                 <option>18</option>
+                                 <option>19</option>
+                                 <option>20</option>
+                                 <option>21</option>
+                                 <option>22</option>
+                                 <option>23</option>
+                                 <option>24</option>
+                                 <option>25</option>
+                                 <option>26</option>
+                                 <option>27</option>
+                                 <option>28</option>
+                                 <option>29</option>
+                                 <option>30</option>
+                                 <option selected>31</option>
+                               </select>日止
+                          
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      <div class="box_tools">
+                         <input name="input" type="button" value="儲存" onClick="history.back()" class="mybtn btn_green">
+                        <input name="input" type="button" value="取消" onclick="history.back()" class="mybtn btn_pink">
+                      </div>
+                  </form>  
+              </article>
+            </div><!-- end #page_main //-->
+            <!-- InstanceEndEditable -->
+        </section>
+       
+        <footer>
+           <p>社團法人中華彌勒文化天仁堂發展協會&nbsp;&nbsp;&nbsp;統一編號：09805611&nbsp;&nbsp;&nbsp;聯絡電話：(02)2267-2072、22672073<br>
+地址:新北市土城區龍泉路35號  <a href="../content/contact.html" title="交通資訊" class="maplink">交通資訊</a></p>
+            <p>社團法人中華彌勒文化天仁堂發展協會&copy;版權所有<br>
+本網站全部圖文係版權所有非經同意不得將全部或部分內容，轉載於任何形式媒體</p>
+            <a href="../register/login.html" title="管理人員登入" class="btn_go to_register">管理人員登入</a>
+            <p class="hidden">製作團隊：版面設計/Ethan Lin  網頁前端/開始設計工作室 Elmo  網站程式/玩人創意設計 YHJ</p>
+        </footer>   
+  </div><!--// end #wrap -->    
+ 
+<script src="../script/web_set.js"></script>
+</body>
+<!-- InstanceEnd --></html>

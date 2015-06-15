@@ -32,6 +32,7 @@ form{margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
 .hidden{ display:none}
+
 a.btn_go{
 	display:block;
 	width:169px;
@@ -157,7 +158,18 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	-o-box-shadow: 0 0 8px #BDB45A;
 	-ms-box-shadow: 0 0 8px #BDB45A;
 	box-shadow: 0 0 8px #BDB45A}
-.w80{ width:80px}		
+.mytxtarea-04{
+	border:2px solid #ad3713;
+	padding:5px 8px;
+	margin-right:5px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	background:#DED7BB}	
+.w80{ width:80px}
+.w180{ width:180px}			
 .w250{ width:365px}
 .w500{ width:650px}			
 
@@ -453,8 +465,10 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
    font-weight:bold;
    color:#5B2E10; 
    border-bottom:2px double #B78562;
-   padding-bottom:8px}
-.mytable-02 tr:hover, .mytable-04 tr:hover, .mytable-05 tr:hover{ background:#F5F1E2}  
+   padding:8px 0}
+.mytable-02 th a{color:#5B2E10}
+.mytable-02 th a:hover{ color:#ad3713; text-decoration:none}
+.mytable-02 tr:hover, .mytable-04 tr:hover, .mytable-05 tr:hover{ background:#F5F1E2} 
 .mytable td, .mytable-02 td, .mytable-03 td{ padding:8px 5px; font-size:1em; line-height:25px}
 .mytable-02 td, .mytable-03 td{ text-align:center; border-bottom:1px dashed #B78562}
 .mytable-02 .td_motion{ width:300px}
@@ -511,19 +525,27 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	position:absolute;
 	top:9px;
 	right:60px;
-	width:265px;}
-.list_type li a{
+	width:265px}
+.list_type02{
+	display: inline-block; width:180px}	
+.list_type li a, .list_type02 li a{
 	display:block;
 	float:left;
-	width:70px;
-	padding:3px 8px;
 	background:#BB5C39;
-	font-size:0.938em;
-	line-height:25px;
 	color:#fff;
 	text-align:center; 
 	text-decoration:none}
-.list_type .list_head a{
+.list_type li a{
+	width:70px;
+	padding:3px 8px;
+	font-size:0.938em;
+	line-height:25px;}	
+.list_type02 li a{
+	width:50px;
+	padding:3px 5px;
+	font-size:0.938em;
+	line-height:22px;}
+.list_type .list_head a, .list_type02 .list_head a{
 	border-top:1px solid #99553B;
 	border-left:1px solid #99553B;
 	-webkit-border-radius: 8px 0 0 8px;
@@ -532,7 +554,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-webkit-box-shadow: 0 1px 0 #78402C;
     -moz-box-shadow: 0 1px 0 #78402C;
     box-shadow: 0 1px 0 #78402C}
-.list_type .list_head a:hover, .list_type .list_head .listin{
+.list_type .list_head a:hover, .list_type .list_head .listin, .list_type02 .list_head a:hover, .list_type02 .list_head .listin{
 	color:#2c2c2c; 
 	background:#fffc00;
 	border-top:none;
@@ -553,7 +575,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-webkit-box-shadow: 0 -1px 0 #A09F38;
 	-moz-box-shadow: 0 -1px 0 #A09F38;
 	box-shadow: 0 -1px 0 #A09F38}		
-.list_type .list_foot a{
+.list_type .list_foot a, .list_type02 .list_foot a{
 	border-top:1px solid #99553B;
 	border-right:1px solid #99553B;
 	-webkit-border-radius: 0 8px 8px 0;
@@ -562,7 +584,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-webkit-box-shadow: 1px 1px 0 #78402C;
     -moz-box-shadow: 1px 1px 0 #78402C;
     box-shadow: 1px 1px 0 #78402C}
-.list_type .list_foot a:hover, .list_type .list_foot .listin{
+.list_type .list_foot a:hover, .list_type .list_foot .listin, .list_type02 .list_foot a:hover, .list_type02 .list_foot .listin{
 	color:#2c2c2c; 
 	background:#fffc00;
 	border-top:none;
@@ -661,7 +683,8 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	float:right;
 	width:40%;
 	text-align:right;
-	padding: 8px 30px 0 0}
+	padding: 8px 60px 0 0
+	/*padding: 8px 30px 0 0*/}
 .box_tools{
 	display:block;
 	width:200px;
@@ -740,5 +763,52 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	background: #fffc00;
 	-webkit-box-shadow: -2px -2px 0 #CDCB00;
 	-moz-box-shadow: -2px -2px 0 #CDCB00;
-	box-shadow: -2px -2px 0 #CDCB00}					
+	box-shadow: -2px -2px 0 #CDCB00}
+	
+/*2015/06 新增*/
+.btn_edit{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background:url(../images/btn_eventedit.png) no-repeat;
+	overflow:hidden;
+	text-indent:-9999px}
+.btn_edit:hover{ background:url(../images/btn_eventedit.png) 0 -15px no-repeat}
+.tab_total{
+	display:block;
+	width:97%;
+	margin:30px 0;
+	background:#B8B39D;
+	border-collapse: separate; 
+	border-spacing: 2px}
+.tab_total th{
+	padding:10px;
+	color:#fff;
+	background:#9E5A35}	
+.tab_total td{
+	padding:10px;
+	background:#F3ECCF}
+.table-set th{ border-top:2px double #B78562}	
+.table-set th span, .table-set02 th span{ 
+    display:inline-block; 
+	background:url(../images/icon_arrow.png) no-repeat; 
+	width:9px; 
+	height:10px;
+	margin-left:10px}
+.table-set th:hover span, .table-set02 th:hover span{ background:url(../images/icon_arrow.png) 0 -10px no-repeat}		
+.bar_subtitle{
+	display:block;
+	float:left}
+.bar_subtitle h4{
+	display:block;
+	float:left;
+	font-weight:bold;
+	padding-right:20px}
+.bar_subtitle, .box_search2{ margin: 20px 0 15px}	
+.box_search2{
+	display:block;
+	float:right;
+	padding-right:25px}	
+.txt_signupinfo{ font-size:.875em; line-height:35px; text-align:center}
+.box_select{ display:block; margin-left:65px}										
 	
