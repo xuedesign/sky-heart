@@ -1,0 +1,106 @@
+/**********************************************************************************************
+
+	Title: CSS for xuedeisgn
+	Author: Elmo Wu (by xuedesign studio)
+	Date: 2015/06
+
+***********************************************************************************************/
+body{
+	background:#F3ECCF;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:20px;
+	color:#393939}
+image{border:0}
+.clean{ clear:both}
+.hidden{ display:none}
+
+#wrap{ display:block; position:relative; width:100%}
+#top_bar{
+	display:block;
+	position: fixed;
+	z-index:999;
+	width:100%;
+	height:70px;
+	background:#190404}
+#bar_main{
+	display:block;
+	width:994px;
+	margin:0 auto;
+	padding:15px 0}	
+#bar_main h1{
+	display:block;
+	float:left;
+	width:50%;
+	font-size:1.375em;
+	line-height:35px;
+	color:#FFF;
+	font-weight:normal}
+#printtool{
+	display:block;
+	float:right;
+	width:50%;
+	text-align:right}		
+
+.mybtn{
+	width:100px;
+	padding:3px 8px;
+	font-size:0.938em;
+	line-height:25px;
+	border:none;
+	margin:0 5px;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#302F2E; 
+	text-decoration:none; 
+	cursor:pointer}
+.btn_green{
+	background:#a9e7a1;
+	-webkit-box-shadow: 2px 2px 0 #5c8757;
+	-moz-box-shadow: 2px 2px 0 #5c8757;
+	box-shadow: 2px 2px 0 #5c8757}
+.btn_pink{
+	background:#ECB8B3;
+    -webkit-box-shadow: 2px 2px 0 #CE9B96;
+	-moz-box-shadow: 2px 2px 0 #CE9B96;
+	box-shadow: 2px 2px 0 #CE9B96}
+.btn_pink:hover, .btn_green:hover{
+	background:#fffc00;
+	-webkit-box-shadow: -2px -2px 0 #CDCB00;
+	-moz-box-shadow: -2px -2px 0 #CDCB00;
+	box-shadow: -2px -2px 0 #CDCB00}				
+
+#page_main{
+	display:block;
+	position:absolute;
+	top:90px;
+	left:50%;
+	width:978px;
+	min-height:650px;
+	margin-left:-425px;
+	background:#FFF;
+	margin-bottom:50px;
+	padding:30px 0 80px 0}
+#page_main h2{
+	display:block;
+	width:90%;
+	font-size:1.5em;
+	letter-spacing:1px;
+	font-family:"標楷體","DFKai-SB";
+	text-align:center;
+	margin-bottom:30px}
+
+.event-info, .event-list{
+	width:895px;
+	border:2px double #333333;
+	margin:10px auto}
+.event-info td, .event-list th, .event-list td{
+	padding:5px;
+	font-size:.938em;
+	text-align: center;
+	border-right:1px solid #000}
+.event-list th, .event-list td { border-bottom:1px solid #000; vertical-align:middle}	
+.event-info td span{ font-weight:bold; color:#36C; padding:0 10px}							
+
