@@ -47,7 +47,7 @@
             <div id="page_main">
               
               <div class="bar_title bg_title-inside">
-                  <h3>編輯單位資料</h3>
+                  <h3>編輯機關資料</h3>
                   <div class="bar_tools">
                     <input name="input" type="button" value="取消編輯" onClick="history.back()" class="mybtn btn_pink">
                   </div>
@@ -58,13 +58,13 @@
                  <!-- 在純檢視狀態下，所有欄位請加上"disabled" 禁止編輯 -->
                  <table class="mytable-05">
                     <tr>
-                      <td class="tdw-120"><h5>單位編號：</h5></td>
+                      <td class="tdw-120"><h5>機關編號：</h5></td>
                       <td colspan="5">0000001</td><!-- 自動產生 -->
                     </tr>
                      <tr>
-                      <td><h5>單位名稱：</h5></td>
+                      <td><h5>機關名稱：</h5></td>
                       <td><input name="group-name" type="text" class="mytxtarea  w250" value="松山慈惠堂"></td>
-                      <td class="tdw-120"><h5>聯絡人：</h5></td>
+                      <td class="tdw-120"><h5>負責人：</h5></td>
                       <td colspan="3"><input name="group-name" type="text" class="mytxtarea w180" value="王大年"></td>
                     </tr>
                     <tr>
@@ -83,7 +83,11 @@
                       <td><h5>通訊地址：</h5></td>
                       <td colspan="5"><input name="address" type="text" class="mytxtarea w500" value="台北市信義區福德街251巷33號"></td>
                     </tr>
-                    
+                    <tr>
+                      <td><h5>機關備註：</h5></td>
+                      <td colspan="5"><textarea rows="3" class="mytxtarea-02 w500" name="note" rel="*" Title=""></textarea>
+</td>
+                    </tr>
                     
                   </table>
                   <div class="box_tools">
