@@ -40,7 +40,12 @@
             <div class="box_login">
                 <h4>【內部管理系統】</h4>
                 <form action="../event/event-list.html" method="post"><!-- action="reglister-list.html" -->
-                   <div class="text_member">
+                  <select name="system-select" class="mytxtarea-04 w300">
+                       <option selected>請選擇要登入的系統</option>
+                       <option>掛號求問</option>
+                       <option>活動報名</option>
+                  </select>
+                  <div class="text_member">
                        <input id="username" name="username" type="text" class="text_input" onfocus="if (this.value=='請輸入使用者帳號') this.value='';" onblur="if (this.value=='') this.value='請輸入使用者帳號';" value="請輸入使用者帳號" >
                        
                        <input id="password" name="password" type="password" class="text_input" onfocus="if (this.value=='請輸入使用者密碼') this.value='';" onblur="if (this.value=='') this.value='請輸入使用者密碼';" value="請輸入使用者密碼" >
@@ -51,7 +56,7 @@
             </div>
             
             <div class="login_note">
-                <p>本掛號系統僅供內部工作人員操作使用，一般訪客請點選下方連結回首頁繼續瀏覽，造成您的不便敬請見諒，謝謝。</p>
+                <p>本管理系統僅供內部工作人員操作使用，一般訪客請點選下方連結回首頁繼續瀏覽，造成您的不便敬請見諒，謝謝。</p>
                 <a href="../index.html" title="返回首頁">返回首頁</a>
             </div> 
         </section>
