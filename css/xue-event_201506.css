@@ -127,8 +127,13 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	background:#B4DEEE;
 	-webkit-box-shadow: 2px 2px 0 #6C8E9C;
 	-moz-box-shadow: 2px 2px 0 #6C8E9C;
-	box-shadow: 2px 2px 0 #6C8E9C}			 
-.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover, .btn_green:hover, .btn_blue:hover{
+	box-shadow: 2px 2px 0 #6C8E9C}
+.btn_brown{
+	background:#E2C3A6;
+	-webkit-box-shadow: 2px 2px 0 #D9B295;
+	-moz-box-shadow: 2px 2px 0 #D9B295;
+	box-shadow: 2px 2px 0 #D9B295}					 
+.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover, .btn_green:hover, .btn_blue:hover, .btn_brown:hover{
 	background:#fffc00;
 	-webkit-box-shadow: -2px -2px 0 #CDCB00;
 	-moz-box-shadow: -2px -2px 0 #CDCB00;
