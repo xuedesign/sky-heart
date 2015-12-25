@@ -52,7 +52,8 @@
                   </h3>
                   <div class="bar_tools">
                     <input name="input" type="button" value="新增報名" onClick="javascript:location.href='register-search.html';" class="mybtn btn_blue"><!-- 在純檢視權限下此按鈕隱藏 -->
-                    <input name="input" type="button" value="列印名冊" onclick="window.open('print-member.html','print')" class="mybtn btn_pink">
+                    <input name="input" type="button" value="列印報名名冊" onclick="window.open('print-member.html','print')" class="mybtn btn_pinktoo">
+                    <input name="input" type="button" value="列印認桌名冊" onclick="window.open('print-desk.html','print')" class="mybtn btn_orange">
                     <input name="input" type="button" value="返回列表" onclick="javascript:location.href='event-list.html';" class="mybtn btn_naturals">
                   </div>
               </div>
@@ -61,22 +62,25 @@
                  <table width="100%" summary="報名統計" class="tab_total">
                   <tr>
                     <th>報名區間</th>
-                    <td colspan="5"><span>104-07-01 ~ 104-07-31</span></td>
+                    <td colspan="7"><span>104-07-01 ~ 104-07-31</span></td>
                   </tr>
                   <tr>
                     <th>總人數</th>
-                    <td width="233"><span>999</span> 人</td>
-                    <th>總金額</th>
-                    <td width="233"><span>999,999,999</span> 元</td>
+                    <td width="144"><span>999</span> 人</td>
+                    <th>捐獻金額</th>
+                    <td width="144"><span>999,999,999</span> 元</td>
                     <th>總貢品數</th>
-                    <td width="234"><span>999</span> 份</td>
+                    <td width="144"><span>999</span> 份</td>
+                    <th>認桌金額</th>
+                    <td width="144"><span>999,999,999</span> 元</td>
                   </tr>
                 </table>
               
                 <div class="bar_subtitle">
-                   <h4>【報名會員名單】</h4>
+                   <h4>【報名信眾名單】</h4>
                    <ul class="list_type02"><!-- 在該檢視狀態時，選單的class要增加listin 做標示 -->
-                       <li class="list_head"><a href="event-info-member.html" title="會員" class="listin">會員</a></li>
+                       <li class="list_head"><a href="event-info-disciple.html" title="弟子">弟子</a></li>
+                       <li class="list_mid"><a href="event-info-member.html" title="信眾" class="listin">信眾</a></li>
                        <li class="list_foot"><a href="event-info-group.html" title="機關">機關</a></li>
                    </ul>
                 </div>
@@ -90,26 +94,28 @@
                 <table summary="會員報名列表" class="mytable-02 table-set clean">
                   <tr>
                     <th><a href="#">編號<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
-                    <th width="10%">姓名</th>
-                    <th width="8%">性別</th>
+                    <th width="8%">姓名</th>
+                    <th width="5%">性別</th>
                     <th><a href="#">金額<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
                     <th width="8%"><a href="#">貢品<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
-                    <th>實物捐獻</th>
-                    <th width="10%">認桌數</th>
+                    <th width="8%">實物捐獻</th>
+                    <th width="7%">認桌數</th>
+                    <th><a href="#">認桌金額<span></span></a></th><!-- 要可調整排序為遞升或遞降 -->
                     <th>備註</th>
                     <th width="30%">功能</th>
                   </tr>
                   <tr>
                     <td>001</td>
-                    <td>王大年</td>
+                    <td>王大年王</td>
                     <td>善男</td>
                     <td>5000</td>
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.5</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td><!-- 在純檢視權限下僅保留"會員資料"及"捐獻明細"按鈕，"取消報名"按鈕隱藏 -->
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -121,9 +127,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.5</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -135,9 +142,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>1</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -149,9 +157,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.3</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -163,9 +172,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.3</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -177,9 +187,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.3</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -191,9 +202,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.3</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -205,9 +217,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>1</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -219,9 +232,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.5</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>
@@ -233,9 +247,10 @@
                     <td>2</td>
                     <td>白米一包</td>
                     <td>0.5</td>
+                    <td>1000</td>
                     <td>-</td>
                     <td>
-                      <input name="input" type="button" value="會員資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
+                      <input name="input" type="button" value="個人資料" onClick="javascript:location.href='edit-member.html';" class="mybtn btn_mi">
                       <input name="input" type="button" value="捐獻明細" onClick="javascript:location.href='event-info-edit.html';" class="mybtn btn_pink">
                       <input name="input" type="button" value="取消報名" class="mybtn btn_naturals"></td>
                   </tr>

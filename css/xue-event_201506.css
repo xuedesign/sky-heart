@@ -112,7 +112,12 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	background:#ECB8B3;
     -webkit-box-shadow: 2px 2px 0 #CE9B96;
 	-moz-box-shadow: 2px 2px 0 #CE9B96;
-	box-shadow: 2px 2px 0 #CE9B96}	
+	box-shadow: 2px 2px 0 #CE9B96}
+.btn_pinktoo{
+	background:#FAB3AD;
+    -webkit-box-shadow: 2px 2px 0 #D98981;
+	-moz-box-shadow: 2px 2px 0 #D98981;
+	box-shadow: 2px 2px 0 #D98981}			
 .btn_naturals{
 	background:#E4C89C;
 	-webkit-box-shadow: 2px 2px 0 #C59F63;
@@ -132,8 +137,13 @@ a.btn_more:hover{color:#ad3713; text-decoration:none; font-weight:bold}
 	background:#E2C3A6;
 	-webkit-box-shadow: 2px 2px 0 #D9B295;
 	-moz-box-shadow: 2px 2px 0 #D9B295;
-	box-shadow: 2px 2px 0 #D9B295}					 
-.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover, .btn_green:hover, .btn_blue:hover, .btn_brown:hover{
+	box-shadow: 2px 2px 0 #D9B295}
+.btn_orange{
+	background:#FCAA7B;
+	-webkit-box-shadow: 2px 2px 0 #D07C4A;
+	-moz-box-shadow: 2px 2px 0 #D07C4A;
+	box-shadow: 2px 2px 0 #D07C4A}						 
+.btn_mi:hover, .btn_pink:hover, .btn_naturals:hover, .btn_green:hover, .btn_blue:hover, .btn_brown:hover, .btn_orange:hover, .btn_pinktoo:hover{
 	background:#fffc00;
 	-webkit-box-shadow: -2px -2px 0 #CDCB00;
 	-moz-box-shadow: -2px -2px 0 #CDCB00;
@@ -532,7 +542,7 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	right:60px;
 	width:265px}
 .list_type02{
-	display: inline-block; width:180px}	
+	display: inline-block; width:270px}	
 .list_type li a, .list_type02 li a{
 	display:block;
 	float:left;
@@ -567,19 +577,25 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	-webkit-box-shadow: -1px -1px 0 #A09F38;
 	-moz-box-shadow: -1px -1px 0 #A09F38;
 	box-shadow: -1px -1px 0 #A09F38}	
-.list_type .list_mid a{
+.list_type .list_mid a, .list_type02 .list_mid a{
 	margin:0 1px;
 	border-top:1px solid #99553B;
 	-webkit-box-shadow: 0 1px 0 #78402C;
     -moz-box-shadow: 0 1px 0 #78402C;
     box-shadow: 0 1px 0 #78402C}
-.list_type .list_mid a:hover, .list_type .list_mid .listin{
+.list_type .list_mid a:hover, .list_type .list_mid .listin, .list_type02 .list_mid a:hover, .list_type02 .list_mid .listin{
 	color:#2c2c2c; 
 	background:#fffc00;
 	border-top:none;
 	-webkit-box-shadow: 0 -1px 0 #A09F38;
 	-moz-box-shadow: 0 -1px 0 #A09F38;
-	box-shadow: 0 -1px 0 #A09F38}		
+	box-shadow: 0 -1px 0 #A09F38}
+.list_type02 .list_head a:hover, 
+.list_type02 .list_head .listin,
+.list_type02 .list_mid a:hover, 
+.list_type02 .list_mid .listin,
+.list_type02 .list_foot a:hover, 
+.list_type02 .list_foot .listin{ padding-bottom:6px}			
 .list_type .list_foot a, .list_type02 .list_foot a{
 	border-top:1px solid #99553B;
 	border-right:1px solid #99553B;
