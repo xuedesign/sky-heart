@@ -29,6 +29,12 @@
          <div id="bar_main">
              <h1>名冊列印</h1>
              <div id="printtool">
+                <label for="PrintContent" class="title">列印範圍：</label>
+                <select name="PrintContent" class="list">
+                  <option selected>全部</option>
+                  <option>善男</option>
+                  <option>信女</option>
+                </select>
                 <input name="input" type="button" id="print_button" value="列印名冊" class="mybtn btn_green">
                 <input name="input" type="button" onClick="self.close();" value="取消列印" class="mybtn btn_pink">
              </div>
@@ -37,7 +43,7 @@
       
       <div id="page_main">
          <div id="myPrintArea">
-            <div id="pagetitle"><h3>【乙未年天仁堂中元普渡活動】會員報名列表</h3></div>
+            <div id="pagetitle"><h3>【乙未年天仁堂中元普渡活動】信眾報名列表</h3></div>
             
            <table summary="報名統計" class="event-info"><!-- span標示範圍為需要帶入的值 -->
               <tr>
@@ -55,7 +61,8 @@
             <table summary="報名列表" class="event-list">
                 <tr>
                   <th width="5%">編號</th>
-                  <th width="8%">姓名</th>
+                  <th width="10%">姓名</th>
+                  <th width="7%">性別</th>
                   <th>生辰</th>
                   <th width="5%">生肖</th>
                   <th width="5%">年齡</th>
@@ -63,12 +70,12 @@
                   <th width="10%">金額</th>
                   <th width="5%">貢品</th>
                   <th width="10%">實物捐獻</th>
-                  <th width="7%">認桌數</th>
                   <th width="10%">備註</th>
                 </tr>
                 <tr>
                   <td>001</td>
                   <td>王大年年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -76,12 +83,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>002</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -89,12 +96,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>003</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -102,12 +109,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>004</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -115,12 +122,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>005</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -128,12 +135,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>006</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -141,12 +148,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>007</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -154,12 +161,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>008</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -167,12 +174,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>009</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -180,12 +187,12 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>010</td>
                   <td>王大年</td>
+                  <td>善男</td>
                   <td>民國101年國曆10月10日吉時</td>
                   <td>猴</td>
                   <td>50</td>
@@ -193,7 +200,6 @@
                   <td>10,000</td>
                   <td>2</td>
                   <td>白米一包</td>
-                  <td>0.5</td>
                   <td>&nbsp;</td>
                 </tr>
            </table>
