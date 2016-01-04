@@ -29,6 +29,13 @@
          <div id="bar_main">
              <h1>名冊列印</h1>
              <div id="printtool">
+                <label for="PrintContent" class="title">列印範圍：</label>
+                <select name="PrintContent" class="list">
+                  <option selected>全部</option>
+                  <option>弟子</option>
+                  <option>信眾</option>
+                  <option>機關</option>
+                </select>
                 <input name="input" type="button" id="print_button" value="列印名冊" class="mybtn btn_green">
                 <input name="input" type="button" onClick="self.close();" value="取消列印" class="mybtn btn_pink">
              </div>
@@ -37,33 +44,144 @@
       
       <div id="page_main">
          <div id="myPrintArea">
-           <div id="pagetitle"><h3>【乙未年天仁堂中元普渡活動】機關報名列表</h3></div>
+           <div id="pagetitle"><h3>【乙未年天仁堂中元普渡活動】認桌列表</h3></div>
             
            <table summary="報名統計" class="event-info">
               <tr>
                 <td>活動類別</td>
                 <td><span>中元普渡</span></td>
-                <td>總報名數</td>
-                <td><span>9999</span> 座</td>
-                <td>總金額</td>
+                <td>總認桌數</td><!-- 認桌數加總 -->
+                <td><span>9999</span>桌</td>
+                <td>認桌總金額</td><!-- 認桌金額加總 -->
                 <td><span>999,999,999</span> 元</td>
-                <td>總貢品數</td>
-                <td><span>999</span> 份</td>
+                <!--<td>總貢品數</td>
+                <td><span>999</span> 份</td>-->
               </tr>
             </table>
             
+            
+            <!-- 請把報名時有勾選 "我要認桌" 及 "認桌合夥人" 都陳列出來 -->
             <table summary="報名列表" class="event-list">
+                <tr>
+                  <th colspan="10" class="list-title"><h5>弟子</h5></th> 
+                </tr>
+                <tr>
+                  <th width="5%">編號</th>
+                  <th width="10%">姓名</th>
+                  <th width="7%">性別</th>
+                  <th width="15%">生辰</th>
+                  <th width="5%">生肖</th>
+                  <th width="5%">年齡</th>
+                  <th width="18%">地址</th>
+                  <th width="7%">認桌數</th>
+                  <th width="10%">認桌金額</th>
+                  <th>備註</th>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>李曉華</td>
+                  <td>弟子</td>
+                  <td>民國101年國曆10月10日吉時</td>
+                  <td>猴</td>
+                  <td>50</td>
+                  <td>台北市士林區中正一路5段15巷2號1樓</td>
+                  <td>1</td>
+                  <td>5000</td>
+                  <td>【李曉華、華王大年合認捐1桌5000元。】</td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>王大年</td>
+                  <td>弟子</td>
+                  <td>民國101年國曆10月10日吉時</td>
+                  <td>猴</td>
+                  <td>50</td>
+                  <td>台北市士林區中正一路5段15巷2號1樓</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>【李曉華、華王大年合認捐1桌5000元。】</td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>李大明</td>
+                  <td>弟子</td>
+                  <td>民國101年國曆10月10日吉時</td>
+                  <td>猴</td>
+                  <td>50</td>
+                  <td>台北市士林區中正一路5段15巷2號1樓</td>
+                  <td>1</td>
+                  <td>5000</td>
+                  <td>&nbsp;</td>
+                </tr>
+             </table>  
+             
+             <table summary="報名列表" class="event-list">
+                <tr>
+                  <th colspan="10" class="list-title"><h5>信眾</h5></th> 
+                </tr>
+                <tr>
+                  <th width="5%">編號</th>
+                  <th width="10%">姓名</th>
+                  <th width="7%">性別</th>
+                  <th width="15%">生辰</th>
+                  <th width="5%">生肖</th>
+                  <th width="5%">年齡</th>
+                  <th width="18%">地址</th>
+                  <th width="7%">認桌數</th>
+                  <th width="10%">認桌金額</th>
+                  <th>備註</th>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>李曉華</td>
+                  <td>善男</td>
+                  <td>民國101年國曆10月10日吉時</td>
+                  <td>猴</td>
+                  <td>50</td>
+                  <td>台北市士林區中正一路5段15巷2號1樓</td>
+                  <td>1</td>
+                  <td>5000</td>
+                  <td>【李曉華、華王大年合認捐1桌5000元。】</td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>王大年</td>
+                  <td>信女</td>
+                  <td>民國101年國曆10月10日吉時</td>
+                  <td>猴</td>
+                  <td>50</td>
+                  <td>台北市士林區中正一路5段15巷2號1樓</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>【李曉華、華王大年合認捐1桌5000元。】</td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>李大明</td>
+                  <td>善男</td>
+                  <td>民國101年國曆10月10日吉時</td>
+                  <td>猴</td>
+                  <td>50</td>
+                  <td>台北市士林區中正一路5段15巷2號1樓</td>
+                  <td>1</td>
+                  <td>5000</td>
+                  <td>&nbsp;</td>
+                </tr>
+             </table>  
+            
+            <table summary="機關認桌列表" class="event-list">
+                <tr>
+                  <th colspan="10" class="list-title"><h5>機關</h5></th> 
+                </tr>
                 <tr>
                   <th width="5%">編號</th>
                   <th width="12%">機關名稱</th>
                   <th width="8%">負責人</th>
                   <th width="15%">聯絡電話</th>
-                  <th>地址</th>
-                  <th width="10%">金額</th>
-                  <th width="5%">貢品</th>
-                  <th width="10%">實物捐獻</th>
+                  <th width="18%">地址</th>
                   <th width="7%">認桌數</th>
-                  <th width="10%">備註</th>
+                  <th width="10%">認桌金額</th>
+                  <th>備註</th>
                 </tr>
                 <tr>
                   <td>001</td>
@@ -71,10 +189,8 @@
                   <td>王大年</td>
                   <td>(02)2726-1735</td>
                   <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
+                  <td>1</td>
+                  <td>5000</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -83,10 +199,8 @@
                   <td>王大年</td>
                   <td>(02)2726-1735</td>
                   <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
+                  <td>1</td>
+                  <td>5000</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -95,94 +209,8 @@
                   <td>王大年</td>
                   <td>(02)2726-1735</td>
                   <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>004</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>005</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>006</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>007</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>008</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>009</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>010</td>
-                  <td>松山慈惠堂</td>
-                  <td>王大年</td>
-                  <td>(02)2726-1735</td>
-                  <td>台北市信義區福德街251巷33號</td>
-                  <td>10,000</td>
-                  <td>2</td>
-                  <td>白米一包</td>
-                  <td>0.5</td>
+                  <td>1</td>
+                  <td>5000</td>
                   <td>&nbsp;</td>
                 </tr>
            </table>

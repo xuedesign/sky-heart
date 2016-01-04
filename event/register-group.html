@@ -98,10 +98,20 @@
                       <td colspan="3"><input name="input" type="text" class="mytxtarea" value="2" ></td>
                     </tr>
                     <tr>
-                      <td><h5>認桌數：</h5></td>
-                      <td><input name="input" type="text" class="mytxtarea" value="0.5"></td>
-                      <td><h5>認桌金額：</h5></td>
-                      <td colspan="3"><input name="input" type="text" class="mytxtarea" value="5000"></td>
+                      <td><h5>參與認桌：</h5></td>
+                      <td colspan="5">
+                         <script>$(function(){$("#grounp").hide(),$(".chk").click(function(){var n=$(this).val();1==n?$("#grounp").slideDown():$("#grounp").slideUp()})});</script>
+                         <input name="joindesk" type="radio" value="0" class="chk" checked="checked"/>沒有 
+                         <input name="joindesk" type="radio" value="1" class="chk"/>我要認桌
+                         <input name="joindesk" type="radio" value="2" class="chk"/>認桌合夥人
+                         <div id="grounp">
+                            <h5>認桌數：</h5>
+                            <input name="input" type="text" class="mytxtarea" value="0">
+                            <h5>認桌金額：</h5>
+                            <input name="input" type="text" class="mytxtarea" value="0">
+                      
+                         </div>
+                      </td>
                     </tr>
                     <tr>
                       <td><h5>實物捐獻：</h5></td>

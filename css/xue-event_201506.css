@@ -830,5 +830,10 @@ a.maplink:hover{ color:#fff; text-decoration:none; font-weight:bold}
 	float:right;
 	padding-right:25px}	
 .txt_signupinfo{ font-size:.875em; line-height:35px; text-align:center}
-.box_select{ display:block; margin-left:65px}										
+.box_select{ display:block; margin-left:65px}
+
+/*2015/12 新增*/
+#grounp{ display:block; padding:10px 5px}
+#grounp h5, #grounp input{ float:left}
+#grounp input{ margin:0 15px}										
 	
